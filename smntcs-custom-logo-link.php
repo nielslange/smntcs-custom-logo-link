@@ -1,17 +1,17 @@
 <?php
 /*
-Plugin Name: SMNTCS Custom Logo Link
-Description: Allows to customize the logo link
-Author: Niels Lange
-Author URI: https://nielslange.com
-Text Domain: smntcs-custom-logo-link
-Domain Path: /languages/
-Version: 1.0
-Requires at least: 3.0
-Tested up to: 4.9
-License: GPLv2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-*/
+ * Plugin Name: SMNTCS Custom Logo Link
+ * Plugin URI: https://github.com/nielslange/smntcs-custom-logo-link
+ * Description: Allows to customize the logo link
+ * Author: Niels Lange
+ * Author URI: https://nielslange.com
+ * Text Domain: smntcs-custom-logo-link
+ * Version: 1.1
+ * Requires at least: 3.4
+ * Tested up to: 4.9
+ * License: GPL2+
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ */
 
 /*  Copyright 2014-2016	Niels Lange (email : info@nielslange.de)
 
@@ -43,33 +43,33 @@ function smntcs_custom_logo_link_load_textdomain() {
 add_action( 'customize_register', 'smntcs_custom_logo_link_register_customize' );
 function smntcs_custom_logo_link_register_customize( $wp_customize ) {
 	$wp_customize->add_section( 'smntcs_custom_logo_link_section', array(
-		'priority' 			=> 200,
-		'title' 			=> __('Logo Link', 'smntcs-custom-logo-link'),
+		'priority'          => 200,
+		'title'             => __('Logo Link', 'smntcs-custom-logo-link'),
 	));
 
 	$wp_customize->add_setting( 'smntcs_custom_logo_link_url', array(
-		'type'				=> 'option',
+		'type'              => 'option',
 		'sanitize_callback' => 'themeslug_sanitize_url',
 	));
 
 	$wp_customize->add_control( 'smntcs_custom_logo_link_url', array(
-		'label' 			=> __('URL', 'smntcs-custom-logo-link'),
-		'section' 			=> 'smntcs_custom_logo_link_section',
-		'type' 				=> 'url',
-		'input_attrs' 		=> array(
-			'placeholder' 	=> __( 'http://www.google.com' ),
+		'label'             => __('URL', 'smntcs-custom-logo-link'),
+		'section'           => 'smntcs_custom_logo_link_section',
+		'type'              => 'url',
+		'input_attrs'       => array(
+			'placeholder'   => __( 'http://www.google.com' ),
 		),
 	));
 
 	$wp_customize->add_setting( 'smntcs_custom_logo_link_target', array(
-		'default' 			=> false,
-		'type'				=> 'option',
+		'default'           => false,
+		'type'              => 'option',
 	));
 
 	$wp_customize->add_control( 'smntcs_custom_logo_link_target', array(
-		'label' 			=> __('Open link in new window', 'smntcs-custom-logo-link'),
-		'section' 			=> 'smntcs_custom_logo_link_section',
-		'type' 				=> 'checkbox',
+		'label'             => __('Open link in new window', 'smntcs-custom-logo-link'),
+		'section'           => 'smntcs_custom_logo_link_section',
+		'type'              => 'checkbox',
 	));
 	function themeslug_sanitize_url( $url ) {
 		return esc_url_raw( $url );
@@ -90,17 +90,17 @@ add_action('wp_head', 'smntcs_custom_logo_link_enqueue');
 function smntcs_custom_logo_link_enqueue() {
 	if ( get_option('smntcs_custom_logo_link_url') ) { ?>
         <script>
-          jQuery(document).ready( function($){
+        jQuery(document).ready( function($){
             $(".custom-logo-link").attr("href", "<?php print(get_option('smntcs_custom_logo_link_url')); ?>");
             $(".site-title > a").attr("href", "<?php print(get_option('smntcs_custom_logo_link_url')); ?>");
-          });
+        });
         </script> <?php
         if ( get_option('smntcs_custom_logo_link_url') ) { ?>
             <script>
-              jQuery(document).ready( function($){
-                $(".custom-logo-link").attr("target", "_blank");
-                $(".site-title > a").attr("target", "_blank");
-              });
+                jQuery(document).ready( function($){
+                    $(".custom-logo-link").attr("target", "_blank");
+                    $(".site-title > a").attr("target", "_blank");
+                });
             </script> <?php
 		}
 	}
