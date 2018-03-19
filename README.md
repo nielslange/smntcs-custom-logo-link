@@ -1,4 +1,4 @@
-# SMNTCS Admin Maintenance
+# SMNTCS Custom Logo Link
 
 [![](https://img.shields.io/github/license/nielslange/smntcs-custom-logo-link.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![](https://plugintests.com/plugins/smntcs-custom-logo-link/wp-badge.svg)](https://plugintests.com/plugins/smntcs-custom-logo-link/latest)
