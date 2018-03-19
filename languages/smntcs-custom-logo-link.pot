@@ -1,0 +1,58 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: SMNTCS Custom Logo Link\n"
+"POT-Creation-Date: 2017-10-12 18:22+0700\n"
+"PO-Revision-Date: 2017-10-12 18:22+0700\n"
+"Last-Translator: Niels Lange <info@nielslange.de>\n"
+"Language-Team: Niels Lange <info@nielslange.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: smntcs-custom-logo-link.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: smntcs-custom-logo-link.php:45
+msgid "Logo Link"
+msgstr ""
+
+#: smntcs-custom-logo-link.php:54
+msgid "URL"
+msgstr ""
+
+#: smntcs-custom-logo-link.php:58
+msgid "http://www.google.com"
+msgstr ""
+
+#: smntcs-custom-logo-link.php:68
+msgid "Open link in new window"
+msgstr ""
+
+#: smntcs-custom-logo-link.php:81
+msgid "Settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "SMNTCS Custom Logo Link"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Allows to customize the logo link"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Niels Lange"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://nielslange.com/"
+msgstr ""
