@@ -3,7 +3,7 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.1
+Stable tag: 1.2
 Requires at least: 3.4
 Tested up to: 5.0
 License: GPLv2 or later
@@ -24,6 +24,9 @@ Allows to add a custom link to the image and textual logo.
 3. Go to 'Appearance' » 'Customize' » 'Logo Link' and provide the logo link
 
 == Changelog ==
+
+= 1.2 =
+* Fix link target issue
 
 = 1.1 =
 * Add README.md
