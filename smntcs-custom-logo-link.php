@@ -8,7 +8,7 @@
  * Text Domain: smntcs-custom-logo-link
  * Version: 1.1
  * Requires at least: 3.4
- * Tested up to: 4.9
+ * Tested up to: 5.0
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
