@@ -3,9 +3,9 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.2
+Stable tag: 1.3
 Requires at least: 3.4
-Tested up to: 5.0
+Tested up to: 5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,11 +25,14 @@ Allows to add a custom link to the image and textual logo.
 
 == Changelog ==
 
+= 1.3 =
+* Tested p to 5.1
+
 = 1.2 =
-* Fix link target issue
+* Fixed link target issue
 
 = 1.1 =
-* Add README.md
+* Added README.md
 
 = 1.0 =
 * Initial release
