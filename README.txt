@@ -3,9 +3,10 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.3
+Stable tag: 1.4
 Requires at least: 3.4
 Tested up to: 5.1
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +25,9 @@ Allows to add a custom link to the image and textual logo.
 3. Go to 'Appearance' » 'Customize' » 'Logo Link' and provide the logo link
 
 == Changelog ==
+
+= 1.4 =
+* Refactored based on PHPCS and WPCS
 
 = 1.3 =
 * Tested p to 5.1
