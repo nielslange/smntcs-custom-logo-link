@@ -6,12 +6,12 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-custom-logo-link
- * Version: 1.4
+ * Version: 1.5
  * Requires at least: 3.4
+ * Tested up to: 5.2
  * Requires PHP: 5.6
- * Tested up to: 5.1
- * License: GPL2+
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * License: GPLv3 or later
+ * License URI: https://www.gnu.org/licenses/gpl.html
  *
  * @category   Plugin
  * @package    WordPress
@@ -22,24 +22,29 @@
 
 /**
  * Avoid direct plugin access
+ *
+ * @since 1.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '¯\_(ツ)_/¯' );
 }
 
-add_action( 'plugins_loaded', 'smntcs_custom_logo_link_load_textdomain' );
 /**
  * Load text domain
+ *
+ * @since 1.0.0
  */
 function smntcs_custom_logo_link_load_textdomain() {
 	load_plugin_textdomain( 'smntcs-custom-logo-link', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
+add_action( 'plugins_loaded', 'smntcs_custom_logo_link_load_textdomain' );
 
-add_action( 'customize_register', 'smntcs_custom_logo_link_register_customize' );
 /**
  * Add Google Search Console code to WordPress Customizer
  *
  * @param WP_Customize_Manager $wp_customize The instance of WP_Customize_Manager.
+ * @return void
+ * @since 1.0.0
  */
 function smntcs_custom_logo_link_register_customize( $wp_customize ) {
 	$wp_customize->add_section(
@@ -87,25 +92,25 @@ function smntcs_custom_logo_link_register_customize( $wp_customize ) {
 		)
 	);
 }
+add_action( 'customize_register', 'smntcs_custom_logo_link_register_customize' );
 
 /**
  * Sanitize URL
  *
- * @param string $url The URL to sanitize.
- *
- * @return string
+ * @param string $url The original URL.
+ * @return string $url The updated URL.
+ * @since 1.0.0
  */
 function smntcs_custom_logo_link_sanitize_url( $url ) {
 	return esc_url_raw( $url );
 }
 
-add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_custom_logo_link_settings_link' );
 /**
  * Add settings link on plugin page
  *
- * @param string $links The settings link on the plugin page.
- *
- * @return mixed
+ * @param string $links The original settings link on the plugin page.
+ * @return string $links The updated settings link on the plugin page.
+ * @since 1.0.0
  */
 function smntcs_custom_logo_link_settings_link( $links ) {
 	$admin_url     = admin_url( 'customize.php?autofocus[control]=smntcs_custom_logo_link_url' );
@@ -114,38 +119,26 @@ function smntcs_custom_logo_link_settings_link( $links ) {
 
 	return $links;
 }
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_custom_logo_link_settings_link' );
 
-add_action( 'wp_head', 'smntcs_custom_logo_link_enqueue' );
 /**
  * Customize logo link (if valid URL had been provided)
+ *
+ * @return void
+ * @since 1.5.0
  */
 function smntcs_custom_logo_link_enqueue() {
-	if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
-		<script>
-			jQuery(document).ready(function ($) {
-				$(".custom-logo-link").attr("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
-				$(".site-title > a").attr("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
-			});
-		</script>
-		<?php
-		if ( get_option( 'smntcs_custom_logo_link_target' ) ) {
-			?>
-			<script>
-				jQuery(document).ready(function ($) {
-					$(".custom-logo-link").attr("target", "_blank");
-					$(".site-title > a").attr("target", "_blank");
-				});
-			</script> 
-			<?php
-		} else {
-			?>
-			<script>
-				jQuery(document).ready(function ($) {
-					$(".custom-logo-link").attr("target", "_self");
-					$(".site-title > a").attr("target", "_self");
-				});
-			</script> 
-			<?php
-		}
+	switch ( get_template() ) {
+		case 'storefront':
+		case 'twentynineteen':
+		case 'twentyseventeen':
+		case 'twentysixteen':
+		case 'twentyfifteen':
+			require_once 'themes/twenty.php';
+			break;
+		case 'sydney':
+			require_once 'themes/sydney.php';
+			break;
 	}
 }
+add_action( 'wp_head', 'smntcs_custom_logo_link_enqueue' );
