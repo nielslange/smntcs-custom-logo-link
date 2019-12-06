@@ -1,0 +1,26 @@
+{
+	"name": "smntcs-custom-logo-link",
+	"version": "1.0.0",
+	"description": "Allows to customize the logo link.",
+	"author": "Niels Lange",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Custom Logo Link"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-custom-logo-link#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nielslange/smntcs-custom-logo-link.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nielslange/smntcs-custom-logo-link/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^5.0.0"
+	},
+	"scripts": {
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	}
+}
