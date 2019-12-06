@@ -135,9 +135,11 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'twentyseventeen':
 		case 'twentysixteen':
 		case 'twentyfifteen':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/twenty.php';
 			break;
 		case 'sydney':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/sydney.php';
 			break;
 	}
