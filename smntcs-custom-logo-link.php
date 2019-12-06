@@ -70,6 +70,7 @@ function smntcs_custom_logo_link_register_customize( $wp_customize ) {
 			'section'     => 'smntcs_custom_logo_link_section',
 			'type'        => 'url',
 			'input_attrs' => array(
+				// phpcs:ignore WordPress.WP.I18n.MissingArgDomain
 				'placeholder' => __( 'http://www.google.com' ),
 			),
 		)
@@ -134,10 +135,10 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'twentyseventeen':
 		case 'twentysixteen':
 		case 'twentyfifteen':
-			require_once 'themes/twenty.php';
+			include_once 'themes/twenty.php';
 			break;
 		case 'sydney':
-			require_once 'themes/sydney.php';
+			include_once 'themes/sydney.php';
 			break;
 	}
 }
