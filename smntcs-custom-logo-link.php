@@ -10,7 +10,7 @@
  * Requires at least: 3.4
  * Tested up to: 5.2
  * Requires PHP: 5.6
- * License: GPLv3 or later
+ * License: GPL3+
  * License URI: https://www.gnu.org/licenses/gpl.html
  *
  * @category   Plugin
