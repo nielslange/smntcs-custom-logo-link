@@ -18,7 +18,7 @@ Allows to add a custom link to the image and textual logo.
 
 > Currently only tested with the Twenty Seventeen theme, but happy to enhanced it, if required.
 
-Supperted themes:
+=== Compatible with ===
 
 * [Storefront](https://wordpress.org/themes/storefront/)
 * [Twenty Nineteen](https://wordpress.org/themes/twentynineteen/)
@@ -31,6 +31,10 @@ Supperted themes:
 1. Upload 'smntcs-custom-logo-link' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to 'Appearance' » 'Customize' » 'Logo Link' and provide the logo link
+
+== Contribute ==
+
+Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
 
