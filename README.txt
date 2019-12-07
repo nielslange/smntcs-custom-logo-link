@@ -25,6 +25,7 @@ Allows to add a custom link to the image and textual logo.
 * [Twenty Seventeen](https://wordpress.org/themes/twentyseventeen/)
 * [Twenty Sixteen](https://wordpress.org/themes/twentysixteen/)
 * [Twenty Fifteen](https://wordpress.org/themes/twentyfifteen/)
+* [Sydney](https://wordpress.org/themes/sydney/)
 
 == Installation ==
 
