@@ -30,7 +30,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 * Refactored based on PHPCS and WPCS
 
 ### 1.3
-* Tested p to 5.1
+* Tested up to 5.1
 
 ### 1.2
 * Fixed link target issue
