@@ -1,11 +1,11 @@
  === SMNTCS Custom Logo Link ===
 
-Contributors: nielslange
+Contributors: nielslange, timbre-design
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.5
+Stable tag: 1.6
 Requires at least: 3.4
-Tested up to: 5.2
+Tested up to: 5.3
 Requires PHP: 5.6
 License: GPL3+
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -39,6 +39,10 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Changelog ==
 
+= 1.6 =
+* Tested up to 5.3
+* Replace jQuery with Vanilla JS
+
 = 1.5 =
 * [Add theme support](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
 
@@ -46,7 +50,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 * Refactored based on PHPCS and WPCS
 
 = 1.3 =
-* Tested p to 5.1
+* Tested up to 5.1
 
 = 1.2 =
 * Fixed link target issue

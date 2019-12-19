@@ -17,27 +17,27 @@
 
 if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
-		jQuery(document).ready(function ($) {
-			$(".custom-logo-link").attr("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
-			$(".site-title > a").attr("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+		document.addEventListener("DOMContentLoaded", function() {
+			document.querySelector(".custom-logo-link").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			document.querySelector(".site-title > a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
 		});
 	</script>
 	<?php
 	if ( get_option( 'smntcs_custom_logo_link_target' ) ) {
 		?>
 		<script>
-			jQuery(document).ready(function ($) {
-				$(".custom-logo-link").attr("target", "_blank");
-				$(".site-title > a").attr("target", "_blank");
+			document.addEventListener("DOMContentLoaded", function() {
+				document.querySelector(".custom-logo-link").setAttribute("target", "_blank");
+				document.querySelector(".site-title > a").setAttribute("target", "_blank");
 			});
 		</script> 
 		<?php
 	} else {
 		?>
 		<script>
-			jQuery(document).ready(function ($) {
-				$(".custom-logo-link").attr("target", "_self");
-				$(".site-title > a").attr("target", "_self");
+			document.addEventListener("DOMContentLoaded", function() {
+				document.querySelector(".custom-logo-link").setAttribute("target", "_self");
+				document.querySelector(".site-title > a").setAttribute("target", "_self");
 			});
 		</script> 
 		<?php

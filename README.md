@@ -23,6 +23,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ## Changelog
 
+### 1.6
+* Tested up to 5.3
+* Replace jQuery with Vanilla JS
+
 ### 1.5
 * [Add theme support](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
 
