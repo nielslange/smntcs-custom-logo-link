@@ -3,9 +3,9 @@
 Contributors: nielslange, timbre-design
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.6
+Stable tag: 1.7
 Requires at least: 3.4
-Tested up to: 5.3
+Tested up to: 5.4
 Requires PHP: 5.6
 License: GPL3+
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -15,8 +15,6 @@ Allows to customize the logo link.
 == Description ==
 
 Allows to add a custom link to the image and textual logo.
-
-> Currently only tested with the Twenty Seventeen theme, but happy to enhanced it, if required.
 
 === Compatible with ===
 
@@ -39,24 +37,42 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Changelog ==
 
-= 1.6 =
+= 1.7 (2020.04.06) =
+* [Add support for Astra theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for ColorMag theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for GeneratePress theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for Hello Elementor theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for Hestia theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for Neve theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for OceanWP theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for Shapely theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for Sydney theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for Twenty Twenty theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for Zerif Lite theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+
+= 1.6 (2019.12.07) =
 * Tested up to 5.3
 * Replace jQuery with Vanilla JS
 
-= 1.5 =
-* [Add theme support](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
+= 1.5 (2019.12.07) =
+* [Add support for Storefront theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
+* [Add support for Twenty Nineteen theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
+* [Add support for Twenty Seventeen theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
+* [Add support for Twenty Sixteen theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
+* [Add support for Twenty Fifteen theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
+* [Add support for Sydney theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/2)
 
-= 1.4 =
+= 1.4 (2019.04.05) =
 * Refactored based on PHPCS and WPCS
 
-= 1.3 =
+= 1.3 (2019.02.20) =
 * Tested up to 5.1
 
-= 1.2 =
+= 1.2 (2019.01.12) =
 * Fixed link target issue
 
-= 1.1 =
+= 1.1 (2018.03.19) =
 * Added README.md
 
-= 1.0 =
+= 1.0 (2018.03.19) =
 * Initial release

@@ -1,12 +1,13 @@
 <?php
 /**
- * Handle custom logo link for Twenty theme series
+ * Handle custom logo link for Twenty themes
  *
- * Storefront:        https://wordpress.org/themes/storefront/
- * Twenty Nineteen:   https://wordpress.org/themes/twentynineteen/
- * Twenty Seventeen:  https://wordpress.org/themes/twentyseventeen/
- * Twenty Sixteen:    https://wordpress.org/themes/twentysixteen/
- * Twenty Fifteen:    https://wordpress.org/themes/twentyfifteen/
+ * ✅ Storefront:        https://wordpress.org/themes/storefront/
+ * ✅ Twenty Fifteen:    https://wordpress.org/themes/twentyfifteen/
+ * ✅ Twenty Nineteen:   https://wordpress.org/themes/twentynineteen/
+ * ✅ Twenty Seventeen:  https://wordpress.org/themes/twentyseventeen/
+ * ✅ Twenty Sixteen:    https://wordpress.org/themes/twentysixteen/
+ * ✅ Twenty Twenty:    https://wordpress.org/themes/twentytwenty/
  *
  * @category   Plugin
  * @package    WordPress
@@ -18,7 +19,6 @@
 if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-			document.querySelector(".custom-logo-link").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
 			document.querySelector(".site-title > a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
 		});
 	</script>
@@ -27,7 +27,6 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector(".custom-logo-link").setAttribute("target", "_blank");
 				document.querySelector(".site-title > a").setAttribute("target", "_blank");
 			});
 		</script> 
@@ -36,7 +35,6 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector(".custom-logo-link").setAttribute("target", "_self");
 				document.querySelector(".site-title > a").setAttribute("target", "_self");
 			});
 		</script> 

@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for Sydney theme
+ * Handle custom logo link for GeneratePress theme
  *
- * ✅ Sydney: https://wordpress.org/themes/sydney/
+ * ✅ GeneratePress: https://wordpress.org/themes/generatepress/
 
  * @category   Plugin
  * @package    WordPress
@@ -14,7 +14,7 @@
 if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-			document.querySelector(".site-title > a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			document.querySelector(".main-title > a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
 		});
 	</script>
 	<?php
@@ -22,7 +22,7 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector(".site-title > a").setAttribute("target", "_blank");
+				document.querySelector(".main-title > a").setAttribute("target", "_blank");
 			});
 		</script> 
 		<?php
@@ -30,7 +30,7 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector(".site-title > a").setAttribute("target", "_self");
+				document.querySelector(".main-title > a").setAttribute("target", "_self");
 			});
 		</script> 
 		<?php

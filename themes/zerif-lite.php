@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for Sydney theme
+ * Handle custom logo link for Zerif Lite theme
  *
- * ✅ Sydney: https://wordpress.org/themes/sydney/
+ * ✅ Zerif Lite: https://wordpress.org/themes/zerif-lite/
 
  * @category   Plugin
  * @package    WordPress

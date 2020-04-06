@@ -6,9 +6,9 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-custom-logo-link
- * Version: 1.6
+ * Version: 1.7
  * Requires at least: 3.4
- * Tested up to: 5.3
+ * Tested up to: 5.4
  * Requires PHP: 5.6
  * License: GPL3+
  * License URI: https://www.gnu.org/licenses/gpl.html
@@ -130,12 +130,49 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_custom
  */
 function smntcs_custom_logo_link_enqueue() {
 	switch ( get_template() ) {
-		case 'storefront':
-		case 'twentynineteen':
-		case 'twentyseventeen':
-		case 'twentysixteen':
-		case 'twentyfifteen':
+		case 'astra':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/astra.php';
+			break;
+		case 'colormag':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/astra.php';
+			break;
+		case 'generatepress':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/generatepress.php';
+			break;
+		case 'hello-elementor':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/hello-elementor.php';
+			break;
+		case 'hestia':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/hestia.php';
+			break;
+		case 'neve':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/hello-elementor.php';
+			break;
+		case 'oceanwp':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/oceanwp.php';
+			break;
+		case 'shapely':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/shapely.php';
+			break;
+		case 'zerif-lite':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/zerif-lite.php';
+			break;
+		case 'storefront':
+		case 'twentyfifteen':
+		case 'twentysixteen':
+		case 'twentyseventeen':
+		case 'twentynineteen':
+		case 'twentytwenty':
+				// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/twenty.php';
 			break;
 		case 'sydney':
