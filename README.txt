@@ -3,7 +3,7 @@
 Contributors: nielslange, timbre-design
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.7
+Stable tag: 1.8
 Requires at least: 3.4
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -47,6 +47,9 @@ Allows to add a custom link to the image and textual logo.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.8 (2020.04.06) =
+* [Add support for Cuisine theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/7)
 
 = 1.7 (2020.04.06) =
 * [Add support for Astra theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)

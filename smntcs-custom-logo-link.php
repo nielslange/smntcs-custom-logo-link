@@ -6,7 +6,7 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-custom-logo-link
- * Version: 1.7
+ * Version: 1.8
  * Requires at least: 3.4
  * Tested up to: 5.4
  * Requires PHP: 5.6
@@ -40,7 +40,7 @@ function smntcs_custom_logo_link_load_textdomain() {
 add_action( 'plugins_loaded', 'smntcs_custom_logo_link_load_textdomain' );
 
 /**
- * Add Google Search Console code to WordPress Customizer
+ * Add custom link section to WordPress Customizer
  *
  * @param WP_Customize_Manager $wp_customize The instance of WP_Customize_Manager.
  * @return void
@@ -137,6 +137,10 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'colormag':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/astra.php';
+			break;
+		case 'cuisine':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/cuisine.php';
 			break;
 		case 'generatepress':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
