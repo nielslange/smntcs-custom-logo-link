@@ -133,39 +133,39 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'astra':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/astra.php';
-			break;	
+			break;
 		case 'colormag':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/astra.php';
-			break;	
+			break;
 		case 'generatepress':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/generatepress.php';
-			break;	
+			break;
 		case 'hello-elementor':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/hello-elementor.php';
-			break;	
+			break;
 		case 'hestia':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/hestia.php';
-			break;	
+			break;
 		case 'neve':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/hello-elementor.php';
-			break;	
+			break;
 		case 'oceanwp':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/oceanwp.php';
-			break;	
+			break;
 		case 'shapely':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/shapely.php';
-			break;	
+			break;
 		case 'zerif-lite':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/zerif-lite.php';
-			break;	
+			break;
 		case 'storefront':
 		case 'twentyfifteen':
 		case 'twentysixteen':

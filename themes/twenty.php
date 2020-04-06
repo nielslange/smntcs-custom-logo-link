@@ -2,7 +2,7 @@
 /**
  * Handle custom logo link for Twenty themes
  *
- * ✅ Storefront:        https://wordpress.org/themes/storefront/ 
+ * ✅ Storefront:        https://wordpress.org/themes/storefront/
  * ✅ Twenty Fifteen:    https://wordpress.org/themes/twentyfifteen/
  * ✅ Twenty Nineteen:   https://wordpress.org/themes/twentynineteen/
  * ✅ Twenty Seventeen:  https://wordpress.org/themes/twentyseventeen/
