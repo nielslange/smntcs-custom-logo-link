@@ -34,6 +34,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 * [Add support for OceanWP theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
 * [Add support for Shapely theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
 * [Add support for Sydney theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
+* [Add support for Twenty Twenty theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)
 * Tested up to 5.3
 * Replace jQuery with Vanilla JS
 
