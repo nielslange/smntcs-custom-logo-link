@@ -130,6 +130,10 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_custom
  */
 function smntcs_custom_logo_link_enqueue() {
 	switch ( get_template() ) {
+		case 'astra':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/astra.php';
+			break;	
 		case 'storefront':
 		case 'twentynineteen':
 		case 'twentyseventeen':
