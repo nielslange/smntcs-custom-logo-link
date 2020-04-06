@@ -18,6 +18,8 @@ Allows to add a custom link to the image and textual logo.
 
 === Compatible with ===
 
+==== WordPress.org themes ====
+
 * [Astra](https://wordpress.org/themes/astra/) → 100,000+ active installs
 * [ColorMag](https://wordpress.org/themes/colormag/) → 100,000+ active installs
 * [GeneratePress](https://wordpress.org/themes/generatepress/) → 200,000+ active installs
@@ -36,6 +38,10 @@ Allows to add a custom link to the image and textual logo.
 * [Zerif Lite](https://wordpress.org/themes/zerif-lite/) → 100,000+ active installs
 * [Sydney](https://wordpress.org/themes/sydney/)
 
+==== ThemeForest themes ====
+
+* [Cuisine](https://themeforest.net/item/cuisine-responsive-restaurant-wordpress-theme/15683899)
+
 == Installation ==
 
 1. Upload 'smntcs-custom-logo-link' to the '/wp-content/plugins/' directory
@@ -50,6 +56,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 1.8 (2020.04.06) =
 * [Add support for Cuisine theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/7)
+* [Add fallback support](https://github.com/nielslange/smntcs-custom-logo-link/issues/7)
 
 = 1.7 (2020.04.06) =
 * [Add support for Astra theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)

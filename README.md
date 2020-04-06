@@ -25,6 +25,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ### 1.8 (2020.04.06)
 * [Add support for Cuisine theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/7)
+* [Add fallback support](https://github.com/nielslange/smntcs-custom-logo-link/issues/7)
 
 ### 1.7 (2020.04.06)
 * [Add support for Astra theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/5)

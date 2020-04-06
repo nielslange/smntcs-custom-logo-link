@@ -183,6 +183,10 @@ function smntcs_custom_logo_link_enqueue() {
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/sydney.php';
 			break;
+		default:
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/default.php';
+			break;
 	}
 }
 add_action( 'wp_head', 'smntcs_custom_logo_link_enqueue' );
