@@ -23,6 +23,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ## Changelog
 
+### 1.9 (2020.04.14)
+* [Fix Neve theme bug](https://github.com/nielslange/smntcs-custom-logo-link/issues/9)
+
 ### 1.8 (2020.04.06)
 * [Add support for Cuisine theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/7)
 * [Add fallback support](https://github.com/nielslange/smntcs-custom-logo-link/issues/7)
