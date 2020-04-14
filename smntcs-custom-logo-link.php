@@ -156,7 +156,7 @@ function smntcs_custom_logo_link_enqueue() {
 			break;
 		case 'neve':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/hello-elementor.php';
+			include_once 'themes/neve.php';
 			break;
 		case 'oceanwp':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
