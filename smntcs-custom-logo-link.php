@@ -50,7 +50,7 @@ function smntcs_custom_logo_link_register_customize( $wp_customize ) {
 	$wp_customize->add_section(
 		'smntcs_custom_logo_link_section',
 		array(
-			'priority' => 200,
+			'priority' => 201,
 			'title'    => __( 'Logo Link', 'smntcs-custom-logo-link' ),
 		)
 	);

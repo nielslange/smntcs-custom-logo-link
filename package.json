@@ -18,9 +18,15 @@
 		"url": "https://github.com/nielslange/smntcs-custom-logo-link/issues"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^5.0.0"
+		"@babel/preset-env": "^7.9.5",
+		"@wordpress/scripts": "^5.0.0",
+		"config": "^3.3.1",
+		"jest": "^25.4.0",
+		"jest-puppeteer": "^4.4.0",
+		"puppeteer": "^3.0.1"
 	},
 	"scripts": {
-		"lint:pkg-json": "wp-scripts lint-pkg-json"
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"test": "jest"
 	}
 }
