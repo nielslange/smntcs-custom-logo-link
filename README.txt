@@ -36,7 +36,7 @@ Allows to add a custom link to the image and textual logo.
 * [Twenty Sixteen](https://wordpress.org/themes/twentysixteen/) → 400,000+ active installs
 * [Twenty Twenty](https://wordpress.org/themes/twentytwenty/) → 1,000,000+ active installs
 * [Zerif Lite](https://wordpress.org/themes/zerif-lite/) → 100,000+ active installs
-* [Sydney](https://wordpress.org/themes/sydney/)
+* [Sydney](https://wordpress.org/themes/sydney/) → 100,000+ active installs
 
 ==== ThemeForest themes ====
 
