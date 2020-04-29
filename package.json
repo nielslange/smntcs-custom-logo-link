@@ -18,7 +18,7 @@
 		"url": "https://github.com/nielslange/smntcs-custom-logo-link/issues"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^5.0.0",
+		"@wordpress/scripts": "^8.0.0",
 		"cypress": "^4.4.1"
 	},
 	"scripts": {
