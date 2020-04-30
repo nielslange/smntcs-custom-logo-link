@@ -14,7 +14,14 @@
 if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-			document.querySelector("#site-header a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			// Site title link.
+			if ( document.querySelector("#site-title a") ) {
+				document.querySelector("#site-title a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			}
+			// Site logo link.
+			if ( document.querySelector("a.custom-logo-link") ) {
+				document.querySelector("a.custom-logo-link").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			}
 		});
 	</script>
 	<?php
@@ -22,7 +29,14 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector("#site-header a").setAttribute("target", "_blank");
+				// Site title link.
+				if ( document.querySelector("#site-title a") ) {
+					document.querySelector("#site-title a").setAttribute("target", "_blank");
+				}
+				// Site logo link.
+				if ( document.querySelector("a.custom-logo-link") ) {
+					document.querySelector("a.custom-logo-link").setAttribute("target", "_blank");
+				}
 			});
 		</script> 
 		<?php
@@ -30,7 +44,14 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector("#site-header a").setAttribute("target", "_self");
+				// Site logo link.
+				if ( document.querySelector("a.custom-logo-link") ) {
+					document.querySelector("a.custom-logo-link").setAttribute("target", "_self");
+				}
+				// Site title link.
+				if ( document.querySelector("#site-title a") ) {
+					document.querySelector("#site-title a").setAttribute("target", "_self");
+				}
 			});
 		</script> 
 		<?php
