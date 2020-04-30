@@ -136,7 +136,7 @@ function smntcs_custom_logo_link_enqueue() {
 			break;
 		case 'colormag':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/astra.php';
+			include_once 'themes/colormag.php';
 			break;
 		case 'cuisine':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
@@ -157,6 +157,10 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'neve':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/neve.php';
+			break;
+		case 'nevertheless':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/nevertheless.php';
 			break;
 		case 'oceanwp':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
