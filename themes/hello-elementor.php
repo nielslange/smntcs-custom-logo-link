@@ -20,7 +20,6 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 			if ( document.querySelector("a.custom-logo-link") ) {
 				document.querySelector("a.custom-logo-link").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
 			}
-			
 		});
 	</script>
 	<?php
