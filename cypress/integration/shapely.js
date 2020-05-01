@@ -8,7 +8,7 @@ describe('Shapely', () => {
 		cy.checkThemeActivation('shapely');
 	});
 	
-	it('can ensure the site title shows the custom link', () => {
+	it('can ensure the site title or logo shows the custom link', () => {
 		cy.checkSiteTitleLink('a.custom-logo-link');
 	});
 	

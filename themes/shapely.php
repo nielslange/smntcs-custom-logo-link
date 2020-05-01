@@ -14,7 +14,9 @@
 if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-			document.querySelector("a.custom-logo-link").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			if ( document.querySelector("a.custom-logo-link") ) {
+				document.querySelector("a.custom-logo-link").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			}
 		});
 	</script>
 	<?php
@@ -22,7 +24,9 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector("a.custom-logo-link").setAttribute("target", "_blank");
+				if ( document.querySelector("a.custom-logo-link") ) {
+					document.querySelector("a.custom-logo-link").setAttribute("target", "_blank");
+				}
 			});
 		</script> 
 		<?php
@@ -30,7 +34,9 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
-				document.querySelector("a.custom-logo-link").setAttribute("target", "_self");
+				if ( document.querySelector("a.custom-logo-link") ) {
+					document.querySelector("a.custom-logo-link").setAttribute("target", "_self");
+				}
 			});
 		</script> 
 		<?php
