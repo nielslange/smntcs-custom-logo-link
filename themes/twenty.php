@@ -5,8 +5,8 @@
  * ✅ Twenty Fifteen:    https://wordpress.org/themes/twentyfifteen/
  * ✅ Twenty Nineteen:   https://wordpress.org/themes/twentynineteen/
  * ✅ Twenty Seventeen:  https://wordpress.org/themes/twentyseventeen/
- * ✅ Twenty Sixteen:    https://wordpress.org/themes/twentysixteen/
- * ✅ Twenty Twenty:			https://wordpress.org/themes/twentytwenty/
+ * ✅ Twenty Sixteen:		https://wordpress.org/themes/twentysixteen/
+ * ✅ Twenty Twenty: 		https://wordpress.org/themes/twentytwenty/
  *
  * @category   Plugin
  * @package    WordPress
