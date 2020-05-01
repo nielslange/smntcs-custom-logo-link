@@ -1,4 +1,4 @@
-describe.only('Hestia', () => {
+describe('Hestia', () => {
 
 	before(function () {
 		cy.login();
