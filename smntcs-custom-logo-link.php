@@ -175,6 +175,9 @@ function smntcs_custom_logo_link_enqueue() {
 			include_once 'themes/zerif-lite.php';
 			break;
 		case 'storefront':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/storefront.php';
+			break;
 		case 'twentyfifteen':
 		case 'twentysixteen':
 		case 'twentyseventeen':
