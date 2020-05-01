@@ -8,8 +8,8 @@ describe('Sydney', () => {
 		cy.checkThemeActivation('sydney');
 	});
 	
-	it('can ensure the site title shows the custom link', () => {
-		cy.checkSiteTitleLink('.site-title a');
+	it('can ensure the site title or logo shows the custom link', () => {
+		cy.checkSiteTitleLink('header .col-md-4 a');
 	});
-	
+
 });

@@ -8,7 +8,7 @@ describe('Hestia', () => {
 		cy.checkThemeActivation('hestia');
 	});
 	
-	it('can ensure the site title shows the custom link', () => {
+	it('can ensure the site title or logo shows the custom link', () => {
 		cy.checkSiteTitleLink('.title-logo-wrapper a');
 	});
 	

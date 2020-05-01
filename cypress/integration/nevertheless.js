@@ -12,4 +12,8 @@ describe('Nevertheless', () => {
 		cy.checkSiteTitleLink('#site-title a');
 	});
 	
+	it('can ensure the site logo shows the custom link', () => {
+		cy.checkSiteLogoLink('a.custom-logo-link');
+	});
+	
 });

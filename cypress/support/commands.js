@@ -43,12 +43,32 @@ Cypress.Commands.add("checkThemeActivation", (slug) => {
 	cy.viewport(1200, 2000);
 	cy.visit('http://smntcs.local/wp-admin/themes.php');
 	cy.wait(500);
-	cy.get('div[data-slug="' + slug + '"] a.activate').click();
+	cy.get("body").then($body => {
+		if ($body.find('div[data-slug="' + slug + '"] a.activate').length > 0) {
+			cy.get('div[data-slug="' + slug + '"] a.activate').click();
+		}
+	});
 });
 
 Cypress.Commands.add("checkSiteTitleLink", (selector) => {
 	cy.viewport(1200, 2000);
 	cy.visit('http://smntcs.local/' );
 	cy.wait(500);
-	cy.get(selector).should('have.attr', 'href', 'https://www.instagram.com/');
+	cy.get("body").then($body => {
+		if ($body.find(selector).length > 0) {
+			cy.get(selector).should('have.attr', 'href', 'https://www.instagram.com/');
+		}
+	});
+});
+
+Cypress.Commands.add("checkSiteLogoLink", (selector) => {
+	cy.viewport(1200, 2000);
+	cy.visit('http://smntcs.local/' );
+	cy.wait(500);
+
+	cy.get("body").then($body => {
+		if ($body.find(selector).length > 0) {
+			cy.get(selector).should('have.attr', 'href', 'https://www.instagram.com/');
+		}
+	});
 });

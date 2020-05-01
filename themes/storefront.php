@@ -1,19 +1,22 @@
 <?php
 /**
- * Handle custom logo link for Shapely theme
+ * Handle custom logo link for Storefront themes
  *
- * ✅ Shapely: https://wordpress.org/themes/shapely/
-
+ * ✅ Storefront:        https://wordpress.org/themes/storefront/
+ *
  * @category   Plugin
  * @package    WordPress
  * @subpackage SMNTCS Custom Logo Link
- * @author     Niels Lange <info@nielslange.de>, Derek Smith <derek@timbre-design.com>
+ * @author     Niels Lange <info@nielslange.de>
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
 if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
+			if ( document.querySelector(".site-title a") ) {
+				document.querySelector(".site-title a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			}
 			if ( document.querySelector("a.custom-logo-link") ) {
 				document.querySelector("a.custom-logo-link").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
 			}
@@ -24,6 +27,9 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
+				if ( document.querySelector(".site-title a") ) {
+					document.querySelector(".site-title a").setAttribute("target", "_blank");
+				}
 				if ( document.querySelector("a.custom-logo-link") ) {
 					document.querySelector("a.custom-logo-link").setAttribute("target", "_blank");
 				}
@@ -34,6 +40,9 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
+				if ( document.querySelector(".site-title a") ) {
+					document.querySelector(".site-title a").setAttribute("target", "_self");
+				}
 				if ( document.querySelector("a.custom-logo-link") ) {
 					document.querySelector("a.custom-logo-link").setAttribute("target", "_self");
 				}

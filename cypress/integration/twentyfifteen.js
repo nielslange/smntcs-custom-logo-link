@@ -1,11 +1,11 @@
-describe('Zerif Lite', () => {
+describe.only('Twenty Fifteen', () => {
 
 	before(function () {
 		cy.login();
 	});
 
-	it('can ensure the Zerif Lite theme is activated', () => {
-		cy.checkThemeActivation('zerif-lite');
+	it('can ensure the Twenty Fifteen theme is activated', () => {
+		cy.checkThemeActivation('twentyfifteen');
 	});
 	
 	it('can ensure the site title shows the custom link', () => {

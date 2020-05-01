@@ -1,11 +1,11 @@
-describe('Zerif Lite', () => {
+describe('Storefront', () => {
 
 	before(function () {
 		cy.login();
 	});
 
-	it('can ensure the Zerif Lite theme is activated', () => {
-		cy.checkThemeActivation('zerif-lite');
+	it('can ensure the Storefront theme is activated', () => {
+		cy.checkThemeActivation('storefront');
 	});
 	
 	it('can ensure the site title shows the custom link', () => {
