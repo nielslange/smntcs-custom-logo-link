@@ -24,6 +24,6 @@
 	"scripts": {
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"test-gui": "cypress open",
-		"test": "cypress run"
+		"test": "cypress run --headless --browser chrome"
 	}
 }
