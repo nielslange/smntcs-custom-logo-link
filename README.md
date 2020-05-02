@@ -25,6 +25,7 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ### 1.10 (2020.04.29)
 * [Add support for Nevertheless theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/11)
+* Tested up to 5.4
 
 ### 1.9 (2020.04.14)
 * [Fix Neve theme bug](https://github.com/nielslange/smntcs-custom-logo-link/issues/9)
