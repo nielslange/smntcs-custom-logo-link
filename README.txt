@@ -3,7 +3,7 @@
 Contributors: nielslange, timbre-design
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.10
+Stable tag: 1.11
 Requires at least: 3.4
 Tested up to: 5.4
 Requires PHP: 5.6
