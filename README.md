@@ -23,6 +23,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ## Changelog
 
+### 1.11 (2020.05.29)
+* [Add support for Suffice theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/27)
+
 ### 1.10 (2020.04.29)
 * [Add support for Nevertheless theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/11)
 * Tested up to 5.4

@@ -42,6 +42,10 @@ Allows to add a custom link to the image and textual logo.
 
 * [Cuisine](https://themeforest.net/item/cuisine-responsive-restaurant-wordpress-theme/15683899)
 
+==== Other themes ====
+
+* [Suffice](https://demo.themegrill.com/suffice/)
+
 == Installation ==
 
 1. Upload 'smntcs-custom-logo-link' to the '/wp-content/plugins/' directory
@@ -53,6 +57,9 @@ Allows to add a custom link to the image and textual logo.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.11 (2020.05.29) =
+* [Add support for Suffice theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/27)
 
 = 1.10 (2020.04.29) =
 * [Add support for Nevertheless theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/11)
