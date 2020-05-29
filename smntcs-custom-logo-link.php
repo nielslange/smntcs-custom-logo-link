@@ -154,6 +154,10 @@ function smntcs_custom_logo_link_enqueue() {
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/hestia.php';
 			break;
+		case 'lore':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/lore.php';
+			break;
 		case 'neve':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/neve.php';
