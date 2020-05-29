@@ -170,25 +170,29 @@ function smntcs_custom_logo_link_enqueue() {
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/shapely.php';
 			break;
-		case 'zerif-lite':
+		case 'suffice':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/zerif-lite.php';
+			include_once 'themes/suffice.php';
 			break;
 		case 'storefront':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/storefront.php';
+			break;
+		case 'sydney':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/sydney.php';
 			break;
 		case 'twentyfifteen':
 		case 'twentysixteen':
 		case 'twentyseventeen':
 		case 'twentynineteen':
 		case 'twentytwenty':
-				// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/twenty.php';
 			break;
-		case 'sydney':
+		case 'zerif-lite':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/sydney.php';
+			include_once 'themes/zerif-lite.php';
 			break;
 		default:
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
