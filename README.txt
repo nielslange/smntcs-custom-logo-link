@@ -3,7 +3,7 @@
 Contributors: nielslange, timbre-design
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.11
+Stable tag: 1.12
 Requires at least: 3.4
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -21,6 +21,7 @@ Allows to add a custom link to the image and textual logo.
 ==== WordPress.org themes ====
 
 * [Astra](https://wordpress.org/themes/astra/) → 100,000+ active installs
+* [Atomic](https://wordpress.org/themes/astra/) → 2,000+ active installs
 * [ColorMag](https://wordpress.org/themes/colormag/) → 100,000+ active installs
 * [GeneratePress](https://wordpress.org/themes/generatepress/) → 200,000+ active installs
 * [Hello Elementor](https://wordpress.org/themes/hello-elementor/) → 200,000+ active installs
@@ -57,6 +58,9 @@ Allows to add a custom link to the image and textual logo.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.12 (2020.06.01) =
+* [Add support for Atomic Blocks theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/31)
 
 = 1.11 (2020.05.29) =
 * [Add support for Lore theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/28)

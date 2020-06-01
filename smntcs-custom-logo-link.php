@@ -6,7 +6,7 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-custom-logo-link
- * Version: 1.11
+ * Version: 1.12
  * Requires at least: 3.4
  * Tested up to: 5.4
  * Requires PHP: 5.6
@@ -133,6 +133,10 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'astra':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/astra.php';
+			break;
+		case 'atomic-blocks':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/atomic-blocks.php';
 			break;
 		case 'colormag':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
