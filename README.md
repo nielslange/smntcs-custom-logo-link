@@ -23,6 +23,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ## Changelog
 
+### 1.12 (2020.06.01) ###
+* [Add support for Atomic Blocks theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/31)
+
 ### 1.11 (2020.05.29)
 * [Add support for Lore theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/28)
 * [Add support for Suffice theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/27)
