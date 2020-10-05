@@ -174,6 +174,10 @@ function smntcs_custom_logo_link_enqueue() {
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/oceanwp.php';
 			break;
+		case 'osmosis':
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once 'themes/osmosis.php';
+			break;
 		case 'shapely':
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/shapely.php';
