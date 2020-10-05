@@ -18,12 +18,35 @@
 		"url": "https://github.com/nielslange/smntcs-custom-logo-link/issues"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^5.0.0",
-		"cypress": "^4.4.1"
+		"cypress": "^4.4.1",
+		"@wordpress/env": "^2.0.1",
+		"@wordpress/scripts": "^12.2.1"
 	},
 	"scripts": {
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"test-gui": "cypress open",
-		"test": "cypress run --headless --browser chrome"
+		"test": "cypress run --headless --browser chrome",
+		"test:astra": "cypress run --headless --browser chrome --spec 'cypress/integration/astra.js'",
+		"test:atomic-blocks": "cypress run --headless --browser chrome --spec 'cypress/integration/atomic-blocks.js'",
+		"test:colormag": "cypress run --headless --browser chrome --spec 'cypress/integration/colormag.js'",
+		"test:cuisine": "cypress run --headless --browser chrome --spec 'cypress/integration/cuisine.js'",
+		"test:generatepress": "cypress run --headless --browser chrome --spec 'cypress/integration/generatepress.js'",
+		"test:hello-elementor": "cypress run --headless --browser chrome --spec 'cypress/integration/hello-elementor.js'",
+		"test:hestia": "cypress run --headless --browser chrome --spec 'cypress/integration/hestia.js'",
+		"test:lore": "cypress run --headless --browser chrome --spec 'cypress/integration/lore.js'",
+		"test:neve": "cypress run --headless --browser chrome --spec 'cypress/integration/neve.js'",
+		"test:nevertheless": "cypress run --headless --browser chrome --spec 'cypress/integration/nevertheless.js'",
+		"test:oceanwp": "cypress run --headless --browser chrome --spec 'cypress/integration/oceanwp.js'",
+		"test:shapely": "cypress run --headless --browser chrome --spec 'cypress/integration/shapely.js'",
+		"test:storefront": "cypress run --headless --browser chrome --spec 'cypress/integration/storefront.js'",
+		"test:suffice": "cypress run --headless --browser chrome --spec 'cypress/integration/suffice.js'",
+		"test:sydney": "cypress run --headless --browser chrome --spec 'cypress/integration/sydney.js'",
+		"test:twentyfifteen": "cypress run --headless --browser chrome --spec 'cypress/integration/twentyfifteen.js'",
+		"test:twentynineteen": "cypress run --headless --browser chrome --spec 'cypress/integration/twentynineteen.js'",
+		"test:twentyseventeen": "cypress run --headless --browser chrome --spec 'cypress/integration/twentyseventeen.js'",
+		"test:twentysixteen": "cypress run --headless --browser chrome --spec 'cypress/integration/twentysixteen.js'",
+		"test:twentytwenty": "cypress run --headless --browser chrome --spec 'cypress/integration/twentytwenty.js'",
+		"test:zerif-lite": "cypress run --headless --browser chrome --spec 'cypress/integration/zerif-lite.js'",
+		"wp-env": "wp-env"
 	}
 }
