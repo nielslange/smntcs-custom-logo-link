@@ -2,7 +2,7 @@
 /**
  * Handle custom logo link for Lore theme
  *
- * Neve: https://themeforest.net/item/lore-elegant-knowledge-base-wordpress-theme/16965024
+ * Lore: https://themeforest.net/item/lore-elegant-knowledge-base-wordpress-theme/16965024
 
  * @category   Plugin
  * @package    WordPress
