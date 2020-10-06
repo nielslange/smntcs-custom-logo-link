@@ -202,10 +202,6 @@ function smntcs_custom_logo_link_enqueue() {
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/twenty.php';
 			break;
-		case 'zerif-lite':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/zerif-lite.php';
-			break;
 		default:
 			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 			include_once 'themes/default.php';
