@@ -50,4 +50,4 @@ script:
   - if [[ "$PHPCS" == 1 ]]; then composer checkcs; fi
 
   # Run the theme through lint:pkg-json checker as defined in @wordpress/scripts package.
-  - if [[ "$PHPCS" == 1 ]]; then npm run lint:pkg-json; fi
+  # - if [[ "$PHPCS" == 1 ]]; then npm run lint:pkg-json; fi

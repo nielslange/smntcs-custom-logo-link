@@ -37,6 +37,7 @@
 		"test:neve": "cypress run --headless --browser chrome --spec 'cypress/integration/neve.js'",
 		"test:nevertheless": "cypress run --headless --browser chrome --spec 'cypress/integration/nevertheless.js'",
 		"test:oceanwp": "cypress run --headless --browser chrome --spec 'cypress/integration/oceanwp.js'",
+		"test:osmosis": "cypress run --headless --browser chrome --spec 'cypress/integration/osmosis.js'",
 		"test:shapely": "cypress run --headless --browser chrome --spec 'cypress/integration/shapely.js'",
 		"test:storefront": "cypress run --headless --browser chrome --spec 'cypress/integration/storefront.js'",
 		"test:suffice": "cypress run --headless --browser chrome --spec 'cypress/integration/suffice.js'",
