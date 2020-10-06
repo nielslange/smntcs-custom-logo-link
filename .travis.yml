@@ -35,7 +35,7 @@ before_install:
   # @link https://johnblackbourn.com/reducing-travis-ci-build-times-for-wordpress-projects/
   # @link https://twitter.com/kelunik/status/954242454676475904
   - phpenv config-rm xdebug.ini || echo 'No xdebug config.'
-  - composer install
+  - composer install selfupdate
   - npm install -g npm@latest
 
 script:
