@@ -1,11 +1,11 @@
-describe('Suffice', () => {
+describe('xi Portfolio', () => {
 
 	before(function () {
 		cy.login();
 	});
 
-	it('can ensure the Suffice theme is activated', () => {
-		cy.checkThemeActivation('suffice');
+	it('can ensure the xi Portfolio theme is activated', () => {
+		cy.checkThemeActivation('xi-portfolio');
 	});
 	
 	it('can ensure the site title shows the custom link', () => {
@@ -13,7 +13,7 @@ describe('Suffice', () => {
 	});
 	
 	it('can ensure the site logo shows the custom link', () => {
-		cy.checkSiteLogoLink('a.custom-logo-link');
+		cy.checkSiteTitleLink('a.custom-logo-link');
 	});
 	
 });

@@ -1,4 +1,4 @@
-describe.skip('Cuisine', () => {
+describe.skip('Cuisine → ThemeForest', () => {
 
 	before(function () {
 		cy.login();

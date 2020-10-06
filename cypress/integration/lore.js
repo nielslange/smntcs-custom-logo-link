@@ -1,4 +1,4 @@
-describe.skip('Lore', () => {
+describe.skip('Lore → ThemeForest', () => {
 
 	before(function () {
 		cy.login();

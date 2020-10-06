@@ -1,10 +1,10 @@
-describe('OceanWP', () => {
+describe.skip('Osmosis → ThemeForest', () => {
 
 	before(function () {
 		cy.login();
 	});
 
-	it('can ensure the OceanWP theme is activated', () => {
+	it('can ensure the Osmosis theme is activated', () => {
 		cy.checkThemeActivation('osmosis');
 	});
 	

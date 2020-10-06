@@ -47,6 +47,7 @@
 		"test:twentyseventeen": "cypress run --headless --browser chrome --spec 'cypress/integration/twentyseventeen.js'",
 		"test:twentysixteen": "cypress run --headless --browser chrome --spec 'cypress/integration/twentysixteen.js'",
 		"test:twentytwenty": "cypress run --headless --browser chrome --spec 'cypress/integration/twentytwenty.js'",
+		"test:xi-portfolio": "cypress run --headless --browser chrome --spec 'cypress/integration/xi-portfolio.js'",
 		"test:zerif-lite": "cypress run --headless --browser chrome --spec 'cypress/integration/zerif-lite.js'",
 		"wp-env": "wp-env"
 	}

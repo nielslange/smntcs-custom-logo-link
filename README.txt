@@ -20,32 +20,32 @@ Allows to add a custom link to the image and textual logo.
 
 ==== WordPress.org themes ====
 
-* [Astra](https://wordpress.org/themes/astra/) → 100,000+ active installs
-* [Atomic](https://wordpress.org/themes/astra/) → 2,000+ active installs
+* [Astra](https://wordpress.org/themes/astra/) → 1,000,000+ active installs
+* [Atomic Blocks](https://wordpress.org/themes/atomic-blocks/) → 2,000+ active installs
 * [ColorMag](https://wordpress.org/themes/colormag/) → 100,000+ active installs
 * [GeneratePress](https://wordpress.org/themes/generatepress/) → 200,000+ active installs
 * [Hello Elementor](https://wordpress.org/themes/hello-elementor/) → 200,000+ active installs
 * [Hestia](https://wordpress.org/themes/hestia/) → 100,000+ active installs
 * [Neve](https://wordpress.org/themes/neve/) → 100,000+ active installs
+* [Nevertheless](https://wordpress.org/themes/nevertheless/) → 900+ active installs
 * [OceanWP](https://wordpress.org/themes/oceanwp/) → 500,000+ active installs
 * [Shapely](https://wordpress.org/themes/shapely/) → 100,000+ active installs
 * [Storefront](https://wordpress.org/themes/storefront/) → 200,000+ active installs
+* [Suffice](https://wordpress.org/themes/suffice/) → 5,000+ active installs
 * [Sydney](https://wordpress.org/themes/sydney/) → 100,000+ active installs
 * [Twenty Fifteen](https://wordpress.org/themes/twentyfifteen/) → 200,000+ active installs
 * [Twenty Nineteen](https://wordpress.org/themes/twentynineteen/) → 1,000,000+ active installs
 * [Twenty Seventeen](https://wordpress.org/themes/twentyseventeen/) → 1,000,000+ active installs
 * [Twenty Sixteen](https://wordpress.org/themes/twentysixteen/) → 400,000+ active installs
 * [Twenty Twenty](https://wordpress.org/themes/twentytwenty/) → 1,000,000+ active installs
+* [xi-portfolio](https://wordpress.org/themes/xi-portfolio/) → 400+ active installs
 * [Zerif Lite](https://wordpress.org/themes/zerif-lite/) → 100,000+ active installs
-* [Sydney](https://wordpress.org/themes/sydney/) → 100,000+ active installs
 
 ==== ThemeForest themes ====
 
 * [Cuisine](https://themeforest.net/item/cuisine-responsive-restaurant-wordpress-theme/15683899)
-
-==== Other themes ====
-
-* [Suffice](https://demo.themegrill.com/suffice/)
+* [Lore](https://themeforest.net/item/lore-elegant-knowledge-base-wordpress-theme/16965024)
+* [Osmosis](https://themeforest.net/item/osmosis-responsive-multipurpose-theme/9839949)
 
 == Installation ==
 

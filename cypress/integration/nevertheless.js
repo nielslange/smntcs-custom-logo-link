@@ -4,7 +4,7 @@ describe('Nevertheless', () => {
 		cy.login();
 	});
 
-	it('can ensure the Astra theme is activated', () => {
+	it('can ensure the Nevertheless theme is activated', () => {
 		cy.checkThemeActivation('nevertheless');
 	});
 	
