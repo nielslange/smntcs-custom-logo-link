@@ -8,6 +8,7 @@
 [![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-custom-logo-link.svg)](https://wordpress.org/plugins/smntcs-custom-logo-link/)
 [![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-custom-logo-link.svg)](https://wordpress.org/plugins/smntcs-custom-logo-link/)
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-custom-logo-link.svg)](https://wordpress.org/plugins/smntcs-custom-logo-link/)
+![Deploy to WordPress.org](https://github.com/nielslange/smntcs-custom-logo-link/workflows/Deploy%20to%20WordPress.org/badge.svg)
 
 Allows to customize the logo link.
 
