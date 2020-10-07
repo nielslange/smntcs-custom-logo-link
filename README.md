@@ -1,7 +1,7 @@
 # SMNTCS Custom Logo Link
 
 [![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
-[![Build Status](https://api.travis-ci.com/nielslange/smntcs-custom-logo-link.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-custom-logo-link)
+[![Build Status](https://travis-ci.org/nielslange/smntcs-custom-logo-link.svg?branch=master)](https://travis-ci.org/nielslange/smntcs-custom-logo-link)
 [![GPLv3 License](https://img.shields.io/github/license/nielslange/smntcs-custom-logo-link.svg)](https://www.gnu.org/licenses/gpl.html)
 [![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-custom-logo-link/wp-badge.svg)](https://plugintests.com/plugins/smntcs-custom-logo-link/latest)
 [![Compatible to PHP version](https://plugintests.com/plugins/smntcs-custom-logo-link/php-badge.svg)](https://plugintests.com/plugins/smntcs-custom-logo-link/latest)
