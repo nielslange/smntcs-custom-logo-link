@@ -3,9 +3,9 @@
 Contributors: nielslange, timbre-design
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.12
+Stable tag: 1.13
 Requires at least: 3.4
-Tested up to: 5.4
+Tested up to: 5.5
 Requires PHP: 5.6
 License: GPL3+
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -57,6 +57,12 @@ Allows to add a custom link to the image and textual logo.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.13 (2020.06.01) =
+* [Add @wordpress/env](https://github.com/nielslange/smntcs-custom-logo-link/issues/39)
+* [Add support for Osmosis theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/34)
+* [Add support for xi Portfolio theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/38)
+* [Remove support for Zerif Lite](https://github.com/nielslange/smntcs-custom-logo-link/issues/42)
 
 = 1.12 (2020.06.01) =
 * [Add support for Atomic Blocks theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/31)

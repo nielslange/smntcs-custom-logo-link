@@ -23,6 +23,12 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ## Changelog
 
+### 1.13 (2020.06.01)
+* [Add @wordpress/env](https://github.com/nielslange/smntcs-custom-logo-link/issues/39)
+* [Add support for Osmosis theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/34)
+* [Add support for xi Portfolio theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/38)
+* [Remove support for Zerif Lite](https://github.com/nielslange/smntcs-custom-logo-link/issues/42)
+
 ### 1.12 (2020.06.01) ###
 * [Add support for Atomic Blocks theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/31)
 
