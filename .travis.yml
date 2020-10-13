@@ -49,9 +49,3 @@ script:
 
   # Check the code against the standards as documented in the phpcs.xml.dist file.
   - if [[ "$PHPCS" == 1 ]]; then composer checkcs; fi
-
-  # Run Codecov
-  - vendor/bin/phpunit --coverage-clover coverage.xml
-
-after_success:
-    - bash <(curl -s https://codecov.io/bash)
