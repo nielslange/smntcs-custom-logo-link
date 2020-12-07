@@ -11,7 +11,7 @@
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
-$target = get_option( 'smntcs_custom_logo_link_target' ) ? "_blank" : "_self";
+$target = get_option( 'smntcs_custom_logo_link_target' ) ? '_blank' : '_self';
 
 if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
