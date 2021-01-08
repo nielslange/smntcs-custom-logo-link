@@ -11,34 +11,19 @@
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
+$target = get_option( 'smntcs_custom_logo_link_target' ) ? '_blank' : '_self';
+
 if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-			if ( document.querySelector(".site-logo a") ) {
-				document.querySelector(".site-logo a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+			const logos = document.querySelectorAll(".site-logo a");
+			if ( !! logos.length ) {
+				logos.forEach( logo => {
+					logo.setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+					logo.setAttribute("target", "<?php echo esc_attr( $target ); ?>");
+				} );
 			}
 		});
 	</script>
 	<?php
-	if ( get_option( 'smntcs_custom_logo_link_target' ) ) {
-		?>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				if ( document.querySelector(".site-logo a") ) {
-					document.querySelector(".site-logo a").setAttribute("target", "_blank");
-				}
-			});
-		</script> 
-		<?php
-	} else {
-		?>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				if ( document.querySelector(".site-logo a") ) {
-					document.querySelector(".site-logo a").setAttribute("target", "_self");
-				}
-			});
-		</script> 
-		<?php
-	}
 }
