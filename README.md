@@ -24,6 +24,9 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ## Changelog
 
+### 1.14 (2021.01.08)
+* Tested up to 5.4
+
 ### 1.13 (2020.06.01)
 * [Add @wordpress/env](https://github.com/nielslange/smntcs-custom-logo-link/issues/39)
 * [Add support for Osmosis theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/34)
