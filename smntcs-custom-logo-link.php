@@ -129,83 +129,67 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_custom
  * @since 1.5.0
  */
 function smntcs_custom_logo_link_enqueue() {
+	// phpcs:disable
 	switch ( get_template() ) {
 		case 'astra':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/astra.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/astra.php';
 			break;
 		case 'atomic-blocks':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/atomic-blocks.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/atomic-blocks.php';
 			break;
 		case 'colormag':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/colormag.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/colormag.php';
 			break;
 		case 'cuisine':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/cuisine.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/cuisine.php';
 			break;
 		case 'generatepress':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/generatepress.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/generatepress.php';
 			break;
 		case 'hello-elementor':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/hello-elementor.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/hello-elementor.php';
 			break;
 		case 'hestia':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/hestia.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/hestia.php';
 			break;
 		case 'lore':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/lore.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/lore.php';
 			break;
 		case 'neve':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/neve.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/neve.php';
 			break;
 		case 'nevertheless':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/nevertheless.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/nevertheless.php';
 			break;
 		case 'oceanwp':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/oceanwp.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/oceanwp.php';
 			break;
 		case 'osmosis':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/osmosis.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/osmosis.php';
 			break;
 		case 'shapely':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/shapely.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/shapely.php';
 			break;
 		case 'suffice':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/suffice.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/suffice.php';
 			break;
 		case 'storefront':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/storefront.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/storefront.php';
 			break;
 		case 'sydney':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/sydney.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/sydney.php';
 			break;
 		case 'twentyfifteen':
 		case 'twentysixteen':
 		case 'twentyseventeen':
 		case 'twentynineteen':
 		case 'twentytwenty':
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/twenty.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/twenty.php';
 			break;
 		default:
-			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
-			include_once 'themes/default.php';
+			require_once plugin_dir_path( __FILE__ ) . 'themes/default.php';
 			break;
 	}
+	// phpcs:enable
 }
 add_action( 'wp_head', 'smntcs_custom_logo_link_enqueue' );
