@@ -143,6 +143,9 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'cuisine':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/cuisine.php';
 			break;
+		case 'Divi':
+			require_once plugin_dir_path( __FILE__ ) . 'themes/divi.php';
+			break;
 		case 'generatepress':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/generatepress.php';
 			break;

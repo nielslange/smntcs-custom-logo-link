@@ -2,7 +2,7 @@
 /**
  * Handle custom logo link for Blocksy theme
  *
- * ✅ Astra: https://wordpress.org/themes/blocksy/
+ * ✅ Blocksy: https://wordpress.org/themes/blocksy/
 
  * @category   Plugin
  * @package    WordPress
