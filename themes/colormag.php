@@ -38,7 +38,7 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 					document.querySelector("a.custom-logo-link").setAttribute("target", "_blank");
 				}
 			});
-		</script> 
+		</script>
 		<?php
 	} else {
 		?>
@@ -53,7 +53,7 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 					document.querySelector("#site-title a").setAttribute("target", "_self");
 				}
 			});
-		</script> 
+		</script>
 		<?php
 	}
 }
