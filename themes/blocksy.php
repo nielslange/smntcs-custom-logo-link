@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for Astra theme
+ * Handle custom logo link for Blocksy theme
  *
- * ✅ Astra: https://wordpress.org/themes/astra/
+ * ✅ Astra: https://wordpress.org/themes/blocksy/
 
  * @category   Plugin
  * @package    WordPress
