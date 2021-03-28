@@ -6,10 +6,10 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-custom-logo-link
- * Version: 1.14
+ * Version: 1.15
  * Requires at least: 3.4
- * Tested up to: 5.6
  * Requires PHP: 5.6
+ * Tested up to: 5.7
  * License: GPL3+
  * License URI: https://www.gnu.org/licenses/gpl.html
  *

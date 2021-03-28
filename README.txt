@@ -3,10 +3,10 @@
 Contributors: nielslange, timbre-design
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.14
+Stable tag: 1.15
 Requires at least: 3.4
-Tested up to: 5.6
 Requires PHP: 5.6
+Tested up to: 5.7
 License: GPL3+
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -18,7 +18,7 @@ Allows to add a custom link to the image and textual logo.
 
 === Compatible with ===
 
-==== WordPress.org themes ====
+**WordPress.org themes**
 
 * [Astra](https://wordpress.org/themes/astra/) → 1,000,000+ active installs
 * [Atomic Blocks](https://wordpress.org/themes/atomic-blocks/) → 2,000+ active installs
@@ -40,7 +40,7 @@ Allows to add a custom link to the image and textual logo.
 * [Twenty Twenty](https://wordpress.org/themes/twentytwenty/) → 1,000,000+ active installs
 * [xi-portfolio](https://wordpress.org/themes/xi-portfolio/) → 400+ active installs
 
-==== ThemeForest themes ====
+**ThemeForest themes**
 
 * [Cuisine](https://themeforest.net/item/cuisine-responsive-restaurant-wordpress-theme/15683899)
 * [Lore](https://themeforest.net/item/lore-elegant-knowledge-base-wordpress-theme/16965024)
@@ -57,6 +57,12 @@ Allows to add a custom link to the image and textual logo.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.15 (2021.03.28) =
+* Tested up to 5.7
+* [Add support for Blocksy theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/50)
+* [Add support for Divi theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/56)
+* [Add pre-comit](https://github.com/nielslange/smntcs-custom-logo-link/issues/58)
 
 = 1.14 (2021.01.08) =
 * Tested up to 5.4
