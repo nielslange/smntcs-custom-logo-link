@@ -32,6 +32,7 @@
 		"test:blocksy": "cypress run --headless --browser chrome --spec 'cypress/integration/blocksy.js'",
 		"test:colormag": "cypress run --headless --browser chrome --spec 'cypress/integration/colormag.js'",
 		"test:cuisine": "cypress run --headless --browser chrome --spec 'cypress/integration/cuisine.js'",
+		"test:divi": "cypress run --headless --browser chrome --spec 'cypress/integration/divi.js'",
 		"test:generatepress": "cypress run --headless --browser chrome --spec 'cypress/integration/generatepress.js'",
 		"test:hello-elementor": "cypress run --headless --browser chrome --spec 'cypress/integration/hello-elementor.js'",
 		"test:hestia": "cypress run --headless --browser chrome --spec 'cypress/integration/hestia.js'",
