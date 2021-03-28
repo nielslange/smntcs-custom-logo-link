@@ -7,13 +7,13 @@ describe('Twenty Sixteen', () => {
 	it('can ensure the Twenty Sixteen theme is activated', () => {
 		cy.checkThemeActivation('twentysixteen');
 	});
-	
+
 	it('can ensure the site title shows the custom link', () => {
 		cy.checkSiteTitleLink('.site-title a');
 	});
-	
+
 	it('can ensure the site logo shows the custom link', () => {
 		cy.checkSiteTitleLink('a.custom-logo-link');
 	});
-	
+
 });

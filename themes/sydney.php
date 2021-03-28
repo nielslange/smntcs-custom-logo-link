@@ -24,7 +24,7 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 			document.addEventListener("DOMContentLoaded", function() {
 				document.querySelector("header .col-md-4 a").setAttribute("target", "_blank");
 			});
-		</script> 
+		</script>
 		<?php
 	} else {
 		?>
@@ -32,7 +32,7 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 			document.addEventListener("DOMContentLoaded", function() {
 				document.querySelector("header .col-md-4 a").setAttribute("target", "_self");
 			});
-		</script> 
+		</script>
 		<?php
 	}
 }

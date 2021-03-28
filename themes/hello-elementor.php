@@ -29,12 +29,12 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 			document.addEventListener("DOMContentLoaded", function() {
 				if ( document.querySelector(".site-header a") ) {
 					document.querySelector(".site-header a").setAttribute("target", "_blank");
-				}	
+				}
 				if ( document.querySelector("a.custom-logo-link") ) {
 					document.querySelector("a.custom-logo-link").setAttribute("target", "_blank");
-				}	
+				}
 			});
-		</script> 
+		</script>
 		<?php
 	} else {
 		?>
@@ -47,7 +47,7 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 					document.querySelector("a.custom-logo-link").setAttribute("target", "_self");
 				}
 			});
-		</script> 
+		</script>
 		<?php
 	}
 }
