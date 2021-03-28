@@ -29,6 +29,7 @@
 		"test": "cypress run --headless --browser chrome",
 		"test:astra": "cypress run --headless --browser chrome --spec 'cypress/integration/astra.js'",
 		"test:atomic-blocks": "cypress run --headless --browser chrome --spec 'cypress/integration/atomic-blocks.js'",
+		"test:blocksy": "cypress run --headless --browser chrome --spec 'cypress/integration/blocksy.js'",
 		"test:colormag": "cypress run --headless --browser chrome --spec 'cypress/integration/colormag.js'",
 		"test:cuisine": "cypress run --headless --browser chrome --spec 'cypress/integration/cuisine.js'",
 		"test:generatepress": "cypress run --headless --browser chrome --spec 'cypress/integration/generatepress.js'",
