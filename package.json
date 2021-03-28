@@ -23,6 +23,7 @@
 		"cypress": "^4.4.1"
 	},
 	"scripts": {
+		"cypress": "cypress",
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"test-gui": "cypress open",
 		"test": "cypress run --headless --browser chrome",
