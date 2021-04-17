@@ -8,8 +8,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-versions: ['7.1', '7.2', '7.3', '7.4', '8.0' ]
+        php: [ '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0' ]
+        wordpress: [ '5.5', '5.6', '5.7'  ]
 
+    name: WP ${{ matrix.wordpress }} on PHP ${{ matrix.php }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -18,9 +20,20 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
-          tools: php-cs-fixer
 
-      - name: Run phpcs
+      - name: Install PHPCS
         run: |
-          phpcs -p -s -v -n . --standard=PHPCompatibilityWP --ignore="/vendor/*,/node_modules/*,/packages/*" --extensions=php -p  --runtime-set testVersion 7.1-
-          phpcs -p -s -v -n . --standard=WordPress --ignore="/vendor/*,/node_modules/*,/packages/*" --extensions=php -p  --runtime-set testVersion 7.1-
+          export PHPCS_DIR=/tmp/phpcs
+          export SNIFFS_DIR=/tmp/sniffs
+          git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git $PHPCS_DIR
+          git clone -b master --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git $WPCS_DIR
+          git clone -b master --depth 1 https://github.com/Automattic/VIP-Coding-Standards.git $VIPCS_DIR
+          git clone -b master --depth 1 https://github.com/sirbrillig/phpcs-variable-analysis.git $VariableAnalysis
+          git clone -b master --depth 1 https://github.com/PHPCSStandards/PHPCSUtils.git $PHPCSUtils
+          git clone -b master --depth 1 https://github.com/PHPCompatibility/PHPCompatibility.git $PHPCompatibility
+          git clone -b master --depth 1 https://github.com/PHPCompatibility/PHPCompatibilityWP.git $PHPCompatibilityWP
+
+      - name: Check PHPCS
+        run: |
+          $PHPCS_DIR/bin/phpcs --config-set installed_paths $WPCS_DIR,$VIPCS_DIR,$VariableAnalysis,$PHPCSUtils,$PHPCompatibility,$PHPCompatibilityWP
+          $PHPCS_DIR/bin/phpcs -p -s -v -n . --standard="WordPress-VIP-Go" --extensions=php

@@ -32,11 +32,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Load text domain
  *
- * @since 1.0.0
- *
  * @return void
+ * @since 1.0.0
  */
-function smntcs_custom_logo_link_load_textdomain(): void {
+function smntcs_custom_logo_link_load_textdomain() {
 	load_plugin_textdomain( 'smntcs-custom-logo-link', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'smntcs_custom_logo_link_load_textdomain' );
@@ -193,7 +192,6 @@ function smntcs_custom_logo_link_enqueue() {
 			break;
 		default:
 			require_once plugin_dir_path( __FILE__ ) . 'themes/default.php';
-			break;
 	}
 	// phpcs:enable
 }
