@@ -1,11 +1,10 @@
-name: Deploy to WordPress.org
+name: Run against PHPCS
 on:
   push:
     tags:
     - "*"
 jobs:
-  tag:
-    name: New tag
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master

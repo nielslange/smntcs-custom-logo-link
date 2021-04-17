@@ -1,0 +1,27 @@
+name: Integration
+on:
+  push:
+    tags:
+    - "*"
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-versions: ['7.1', '7.2', '7.3', '7.4', '8.0' ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          tools: php-cs-fixer
+
+      - name: Run phpcs
+        run: |
+          phpcs -p -s -v -n . --standard=PHPCompatibilityWP --ignore="/vendor/*,/node_modules/*,/packages/*" --extensions=php -p  --runtime-set testVersion 7.1-
+          phpcs -p -s -v -n . --standard=WordPress --ignore="/vendor/*,/node_modules/*,/packages/*" --extensions=php -p  --runtime-set testVersion 7.1-
