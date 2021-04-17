@@ -1,4 +1,4 @@
-name: Build And Test
+name: Cypress.io e2e test
 on: [push, pull_request]
 jobs:
   plugin:
@@ -7,8 +7,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [7.3, 7.4]
-        wp: [5.5, 'nightly']
+        php: [ 7.4 ]
+        wp: [ 'nightly' ]
+        # php: [7.3, 7.4]
+        # wp: [5.5, 'nightly']
     services:
       mysql:
         image: mysql:5.7
