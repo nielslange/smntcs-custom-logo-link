@@ -5,6 +5,14 @@ on: push
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      PHPCS_DIR: /tmp/phpcs
+      WPCS_DIR: /tmp/sniffs/WordPress-Coding-Standards
+      VIPCS_DIR: /tmp/sniffs/VIP-Coding-Standards
+      VariableAnalysis: /tmp/sniffs/phpcs-variable-analysis
+      PHPCSUtils: /tmp/sniffs/PHPCSUtils
+      PHPCompatibility: /tmp/sniffs/PHPCompatibility
+      PHPCompatibilityWP: /tmp/sniffs/PHPCompatibilityWP
     strategy:
       fail-fast: false
       matrix:
@@ -21,14 +29,6 @@ jobs:
           php-version: ${{ matrix.php }}
 
       - name: Install PHPCS
-        env:
-          PHPCS_DIR: /tmp/phpcs
-          WPCS_DIR: /tmp/sniffs/WordPress-Coding-Standards
-          VIPCS_DIR: /tmp/sniffs/VIP-Coding-Standards
-          VariableAnalysis: /tmp/sniffs/phpcs-variable-analysis
-          PHPCSUtils: /tmp/sniffs/PHPCSUtils
-          PHPCompatibility: /tmp/sniffs/PHPCompatibility
-          PHPCompatibilityWP: /tmp/sniffs/PHPCompatibilityWP
         run: |
           export PHPCS_DIR=/tmp/phpcs
           export SNIFFS_DIR=/tmp/sniffs
