@@ -49,8 +49,11 @@ jobs:
       - name: Install dependencies
         run: COMPOSER_ROOT_VERSION=dev-master composer install --prefer-dist --no-progress --no-suggest
 
-      - name: Start MySQL server
-        run: sudo service mysql start
+      - name: Start MySQL service
+        run: sudo /etc/init.d/mysql start
+
+      # - name: Start MySQL server
+      #   run: sudo service mysql start
 
       - name: Prepare test database
         run: |
