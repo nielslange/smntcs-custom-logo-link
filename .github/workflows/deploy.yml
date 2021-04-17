@@ -1,4 +1,4 @@
-name: Run against PHPCS
+name: Deploy to WordPress.org
 on:
   push:
     tags:
