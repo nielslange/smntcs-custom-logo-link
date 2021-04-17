@@ -9,9 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         php: [ '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0' ]
-        wordpress: [ '5.5', '5.6', '5.7'  ]
 
-    name: WP ${{ matrix.wordpress }} on PHP ${{ matrix.php }}
+    name: PHP ${{ matrix.php }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -22,6 +21,14 @@ jobs:
           php-version: ${{ matrix.php }}
 
       - name: Install PHPCS
+        env:
+          PHPCS_DIR: /tmp/phpcs
+          WPCS_DIR: /tmp/sniffs/WordPress-Coding-Standards
+          VIPCS_DIR: /tmp/sniffs/VIP-Coding-Standards
+          VariableAnalysis: /tmp/sniffs/phpcs-variable-analysis
+          PHPCSUtils: /tmp/sniffs/PHPCSUtils
+          PHPCompatibility: /tmp/sniffs/PHPCompatibility
+          PHPCompatibilityWP: /tmp/sniffs/PHPCompatibilityWP
         run: |
           export PHPCS_DIR=/tmp/phpcs
           export SNIFFS_DIR=/tmp/sniffs
