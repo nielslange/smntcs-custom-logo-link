@@ -1,4 +1,6 @@
 /.DS_Store
+cypress
 node_modules
 vendor
-/cypress/.DS_Store
+composer.lock
+package-lock.json
