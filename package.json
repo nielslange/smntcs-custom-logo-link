@@ -1,6 +1,5 @@
 {
 	"name": "smntcs-custom-logo-link",
-	"version": "1.0.0",
 	"description": "Allows to customize the logo link.",
 	"author": "Niels Lange",
 	"license": "GPL-2.0-or-later",
@@ -18,13 +17,13 @@
 		"url": "https://github.com/nielslange/smntcs-custom-logo-link/issues"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^2.0.1",
-		"@wordpress/scripts": "^12.2.1",
-		"cypress": "^4.4.1"
+		"@wordpress/env": "^4.1",
+		"@wordpress/prettier-config": "1.1.1",
+		"cypress": "^9.1",
+		"eslint": "^7.32.0"
 	},
 	"scripts": {
 		"cypress": "cypress",
-		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"test-gui": "cypress open",
 		"test": "cypress run --headless --browser chrome",
 		"test:astra": "cypress run --headless --browser chrome --spec 'cypress/integration/astra.js'",
