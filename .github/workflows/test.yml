@@ -1,149 +1,30 @@
-name: Run PHPCS, PHPLint, Psalm and Cypress
+name: Run PHPCS and PHPLint
 
 on: [pull_request]
 
 jobs:
-  PHPCS:
+  test:
+    name: Run static tests
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Get Composer cache directory
-        id: composer-cache
-        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
-
-      - name: Set up Composer caching
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-composer-dependencies
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-composer-
-
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: "7.4"
-          coverage: none
-          tools: composer, cs2pr
-
-      - name: Log debug information
-        run: |
-          php --version
-          composer --version
 
       - name: Install Composer dependencies
-        run: |
-          composer install --prefer-dist --no-suggest --no-progress --no-ansi --no-interaction
-          echo "${PWD}/vendor/bin" >> $GITHUB_PATH
+        uses: ramsey/composer-install@v1
 
-      - name: Log PHPCS debug information
-        run: phpcs -i
+      - name: Show PHPCS sniffs
+        run: ./vendor/bin/phpcs -i
 
-      - name: Run PHPCS on all files
-        run: phpcs --standard=phpcs.dist.xml .
-
-  PHPLint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Get Composer cache directory
-        id: composer-cache
-        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
-
-      - name: Set up Composer caching
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-composer-dependencies
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-composer-
-
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: "7.4"
-          coverage: none
-          tools: composer, cs2pr
-
-      - name: Log debug information
+      - name: Show version info
         run: |
           php --version
-          composer --version
+          ./vendor/bin/phpcs --version
+          ./vendor/bin/phplint --version
 
-      - name: Install Composer dependencies
-        run: |
-          composer install --prefer-dist --no-suggest --no-progress --no-ansi --no-interaction
-          echo "${PWD}/vendor/bin" >> $GITHUB_PATH
+      - name: Run PHP_CodeSniffer
+        run: composer phpcs
 
-      - name: Run PHPLint on all files
-        run: phplint
-
-  Psalm:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Get Composer cache directory
-        id: composer-cache
-        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
-
-      - name: Set up Composer caching
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-composer-dependencies
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-composer-
-
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: "7.4"
-          coverage: none
-          tools: composer, cs2pr
-
-      - name: Log debug information
-        run: |
-          php --version
-          composer --version
-
-      - name: Install Composer dependencies
-        run: |
-          composer install --prefer-dist --no-suggest --no-progress --no-ansi --no-interaction
-          echo "${PWD}/vendor/bin" >> $GITHUB_PATH
-
-      - name: Run Psalm on all files
-        run: psalm --no-cache
-
-  Cypress:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Install node
-        uses: actions/setup-node@v2
-        with:
-          node:version: "14"
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-          start: npm run wp-env start
-          wait-on: "http://localhost:8888"
-          browser: chrome
-          headless: true
+      - name: Run PHPLint
+        run: composer phplint

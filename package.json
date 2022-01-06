@@ -28,7 +28,6 @@
 		"phpcbf": "composer phpcbf",
 		"phpcs": "composer phpcs",
 		"phplint": "composer phplint",
-		"psalm": "composer psalm",
 		"test:e2e": "cypress run --headless --browser chrome",
 		"test:e2e-dev": "cypress open",
 		"test:static": "npm-run-all --parallel phpcs phplint",
