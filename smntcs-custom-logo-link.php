@@ -22,8 +22,6 @@
 
 /**
  * Avoid direct plugin access
- *
- * @since 1.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '¯\_(ツ)_/¯' );
@@ -31,8 +29,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Load text domain
- *
- * @since 1.0.0
  */
 function smntcs_custom_logo_link_load_textdomain() {
 	load_plugin_textdomain( 'smntcs-custom-logo-link', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
@@ -44,7 +40,6 @@ add_action( 'plugins_loaded', 'smntcs_custom_logo_link_load_textdomain' );
  *
  * @param WP_Customize_Manager $wp_customize The instance of WP_Customize_Manager.
  * @return void
- * @since 1.0.0
  */
 function smntcs_custom_logo_link_register_customize( $wp_customize ) {
 	$wp_customize->add_section(
@@ -100,7 +95,6 @@ add_action( 'customize_register', 'smntcs_custom_logo_link_register_customize' )
  *
  * @param string $url The original URL.
  * @return string $url The updated URL.
- * @since 1.0.0
  */
 function smntcs_custom_logo_link_sanitize_url( $url ) {
 	return esc_url_raw( $url );
@@ -109,13 +103,12 @@ function smntcs_custom_logo_link_sanitize_url( $url ) {
 /**
  * Add settings link on plugin page
  *
- * @param string $links The original settings link on the plugin page.
- * @return string $links The updated settings link on the plugin page.
- * @since 1.0.0
+ * @param array $links The original array with customizer links.
+ * @return array The updated array with customizer links.
  */
-function smntcs_custom_logo_link_settings_link( $links ) {
+function smntcs_custom_logo_link_settings_link( array $links ) {
 	$admin_url     = admin_url( 'customize.php?autofocus[control]=smntcs_custom_logo_link_url' );
-	$settings_link = '<a href="' . $admin_url . '">' . __( 'Settings', 'smntcs-custom-logo-link' ) . '</a>';
+	$settings_link = sprintf( '<a href="%s">' . __( 'Settings', 'smntcs-custom-logo-link' ) . '</a>', $admin_url );
 	array_unshift( $links, $settings_link );
 
 	return $links;
@@ -126,7 +119,6 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_custom
  * Customize logo link (if valid URL had been provided)
  *
  * @return void
- * @since 1.5.0
  */
 function smntcs_custom_logo_link_enqueue() {
 	// phpcs:disable

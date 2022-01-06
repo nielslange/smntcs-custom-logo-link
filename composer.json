@@ -1,35 +1,42 @@
 {
 	"name": "nielslange/smntcs-custom-logo-link",
-	"type": "plugin",
 	"description": "Allows to customize the logo link.",
+	"homepage": "https://github.com/nielslange/smntcs-custom-logo-link",
+	"type": "wordpress-plugin",
 	"keywords": [
 		"WordPress",
 		"Plugin",
 		"SMNTCS Custom Logo Link"
 	],
-	"homepage": "https://github.com/nielslange/smntcs-custom-logo-link",
-	"license": "GPL-3.0-or-later",
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
-			"name": "Contributors",
-			"homepage": "https://github.com/nielslange/smntcs-custom-logo-link/graphs/contributors"
+			"name": "Niels Lange",
+			"email": "info@nielslange.de"
 		}
 	],
 	"require": {
-		"php": ">=5.6"
+		"php": ">=7.3"
 	},
 	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-		"jakub-onderka/php-parallel-lint": "^1.0",
-		"wptrt/wpthemereview": "^0.2.1"
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"humanmade/psalm-plugin-wordpress": "^2.0",
+		"overtrue/phplint": "^2.3",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"squizlabs/php_codesniffer": "^3.6",
+		"vimeo/psalm": "^4.7",
+		"wp-coding-standards/wpcs": "^2.3"
 	},
 	"scripts": {
-		"checkcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --runtime-set testVersion 5.6-",
-		"fixcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --runtime-set testVersion 5.6-",
-		"lint": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
+		"phpcbf": "phpcbf --standard=phpcs.dist.xml .",
+		"phpcs": "phpcs --standard=phpcs.dist.xml .",
+		"phplint": "phplint",
+		"psalm": "psalm --no-cache"
 	},
-	"support": {
-		"issues": "https://github.com/nielslange/smntcs-custom-logo-link/issues",
-		"source": "https://github.com/nielslange/smntcs-custom-logo-link"
+	"config": {
+		"allow-plugins": {
+			"composer/package-versions-deprecated": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	}
 }
