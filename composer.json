@@ -32,5 +32,11 @@
 		"phpcs": "phpcs --standard=phpcs.dist.xml .",
 		"phplint": "phplint",
 		"psalm": "psalm --no-cache"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/package-versions-deprecated": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	}
 }
