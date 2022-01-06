@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Please note that I will no longer add support for premium themes.** I believe in Open Source and I'm happy to add support for all themes that are available via https://wordpress.org/themes/. If you're using a premium theme, e.g. from https://themeforest.net/, please contact the theme developer directly to request adding this feature to the corresponding theme.
+Please note that I will no longer add support for premium themes. I believe in Open Source and I'm happy to add support for all themes that are available via https://wordpress.org/themes/. If you're using a premium theme, e.g. from https://themeforest.net/, please contact the theme developer directly to request adding this feature to the corresponding theme.
 
 ---
 
