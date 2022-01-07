@@ -3,40 +3,40 @@ name: Run PHPCS, PHPLint and Cypress
 on: [pull_request]
 
 jobs:
-    # PHPCS:
-    #     runs-on: ubuntu-latest
+    PHPCS:
+        runs-on: ubuntu-latest
 
-    #     steps:
-    #         - name: Checkout code
-    #           uses: actions/checkout@v2
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
 
-    #         - name: Install Composer dependencies
-    #           uses: ramsey/composer-install@v1
+            - name: Install Composer dependencies
+              uses: ramsey/composer-install@v1
 
-    #         - name: Show PHPCS sniffs
-    #           run: ./vendor/bin/phpcs -i
+            - name: Show PHPCS sniffs
+              run: ./vendor/bin/phpcs -i
 
-    #         - name: Show PHPCS version
-    #           run: ./vendor/bin/phpcs --version
+            - name: Show PHPCS version
+              run: ./vendor/bin/phpcs --version
 
-    #         - name: Run PHP_CodeSniffer
-    #           run: composer phpcs
+            - name: Run PHP_CodeSniffer
+              run: composer phpcs
 
-    # PHPLint:
-    #     runs-on: ubuntu-latest
+    PHPLint:
+        runs-on: ubuntu-latest
 
-    #     steps:
-    #         - name: Checkout code
-    #           uses: actions/checkout@v2
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
 
-    #         - name: Install Composer dependencies
-    #           uses: ramsey/composer-install@v1
+            - name: Install Composer dependencies
+              uses: ramsey/composer-install@v1
 
-    #         - name: Show PHPLint version info
-    #           run: ./vendor/bin/phplint --version
+            - name: Show PHPLint version info
+              run: ./vendor/bin/phplint --version
 
-    #         - name: Run PHPLint
-    #           run: composer phplint
+            - name: Run PHPLint
+              run: composer phplint
 
     Cypress:
         runs-on: ubuntu-latest
@@ -52,7 +52,7 @@ jobs:
             - name: Install dependencies
               run: npm install
 
-           - name: Cypress run
+            - name: Cypress run
               uses: cypress-io/github-action@v2
               with:
                   start: npm run wp-env start
