@@ -16,12 +16,16 @@
 	"bugs": {
 		"url": "https://github.com/nielslange/smntcs-custom-logo-link/issues"
 	},
+	"browserslist": [
+		"defaults"
+	],
 	"devDependencies": {
 		"@wordpress/env": "^4.1",
 		"@wordpress/prettier-config": "1.1.1",
-		"cypress": "^9.1",
-		"eslint": "^7.32.0",
-		"npm-run-all": "4.1.5"
+		"cypress": "^9.2",
+		"eslint": "^8.6.0",
+		"npm-run-all": "4.1.5",
+		"prettier": "npm:wp-prettier@2.0.5"
 	},
 	"scripts": {
 		"cypress": "cypress",
@@ -36,7 +40,6 @@
 		"test:theme-blocksy": "cypress run --headless --browser chrome --spec 'cypress/integration/blocksy.js'",
 		"test:theme-colormag": "cypress run --headless --browser chrome --spec 'cypress/integration/colormag.js'",
 		"test:theme-cuisine": "cypress run --headless --browser chrome --spec 'cypress/integration/cuisine.js'",
-		"test:theme-divi": "cypress run --headless --browser chrome --spec 'cypress/integration/divi.js'",
 		"test:theme-generatepress": "cypress run --headless --browser chrome --spec 'cypress/integration/generatepress.js'",
 		"test:theme-hello-elementor": "cypress run --headless --browser chrome --spec 'cypress/integration/hello-elementor.js'",
 		"test:theme-hestia": "cypress run --headless --browser chrome --spec 'cypress/integration/hestia.js'",
@@ -55,6 +58,7 @@
 		"test:theme-twentysixteen": "cypress run --headless --browser chrome --spec 'cypress/integration/twentysixteen.js'",
 		"test:theme-twentytwenty": "cypress run --headless --browser chrome --spec 'cypress/integration/twentytwenty.js'",
 		"test:theme-xi-portfolio": "cypress run --headless --browser chrome --spec 'cypress/integration/xi-portfolio.js'",
-		"wp-env": "wp-env"
+		"wp-env": "wp-env",
+		"wp-env:config": ". cypress/bin/setup.sh"
 	}
 }
