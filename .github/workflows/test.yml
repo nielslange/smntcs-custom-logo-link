@@ -52,10 +52,10 @@ jobs:
             - name: Install dependencies
               run: npm install
 
-            - name: Cypress run
+           - name: Cypress run
               uses: cypress-io/github-action@v2
               with:
                   start: npm run wp-env start
-                  wait-on: 'http://localhost:8889'
+                  wait-on: 'http://localhost:8888'
                   browser: chrome
                   headless: true
