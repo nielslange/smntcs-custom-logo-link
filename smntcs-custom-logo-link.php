@@ -134,6 +134,9 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'colormag':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/colormag.php';
 			break;
+		case 'education-hub':
+			require_once plugin_dir_path( __FILE__ ) . 'themes/education-hub.php';
+			break;
 		case 'generatepress':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/generatepress.php';
 			break;
