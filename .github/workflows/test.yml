@@ -55,7 +55,9 @@ jobs:
             - name: Cypress run
               uses: cypress-io/github-action@v2
               with:
-                  start: npm run wp-env start && npm run wp-env:config
+                  start: |
+                      npm run wp-env start
+                      npm run wp-env:config
                   wait-on: 'http://localhost:8889'
                   browser: chrome
                   headless: true
