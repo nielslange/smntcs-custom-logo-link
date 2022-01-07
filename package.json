@@ -39,6 +39,7 @@
 		"test:theme-atomic-blocks": "cypress run --headless --browser chrome --spec 'cypress/integration/atomic-blocks.js'",
 		"test:theme-blocksy": "cypress run --headless --browser chrome --spec 'cypress/integration/blocksy.js'",
 		"test:theme-colormag": "cypress run --headless --browser chrome --spec 'cypress/integration/colormag.js'",
+		"test:theme-education-hub": "cypress run --headless --browser chrome --spec 'cypress/integration/education-hub.js'",
 		"test:theme-cuisine": "cypress run --headless --browser chrome --spec 'cypress/integration/cuisine.js'",
 		"test:theme-generatepress": "cypress run --headless --browser chrome --spec 'cypress/integration/generatepress.js'",
 		"test:theme-hello-elementor": "cypress run --headless --browser chrome --spec 'cypress/integration/hello-elementor.js'",
