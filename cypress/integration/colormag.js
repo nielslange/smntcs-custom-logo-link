@@ -1,10 +1,10 @@
-describe( 'Colormag', () => {
+describe( 'ColorMag', () => {
 	before( function () {
 		cy.login();
 	} );
 
 	it( 'can ensure the Colormag theme is activated', () => {
-		cy.checkThemeActivation( 'Colormag' );
+		cy.checkThemeActivation( 'ColorMag' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {
