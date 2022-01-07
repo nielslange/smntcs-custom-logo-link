@@ -1,4 +1,26 @@
 {
 	"core": null,
-	"plugins": [ "." ]
+	"plugins": [ "." ],
+	"themes": [
+		"astra",
+		"atomic-blocks",
+		"blocksy",
+		"colormag",
+		"generatepress",
+		"hello-elementor",
+		"hestia",
+		"neve",
+		"nevertheless",
+		"oceanwp",
+		"shapely",
+		"suffice",
+		"storefront",
+		"sydney",
+		"twentyfifteen",
+		"twentysixteen",
+		"twentyseventeen",
+		"twentynineteen",
+		"twentytwenty",
+		"xi-portfolio"
+	]
 }
