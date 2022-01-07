@@ -10,16 +10,6 @@
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-custom-logo-link.svg)](https://wordpress.org/plugins/smntcs-custom-logo-link/)
 ![Deploy to WordPress.org](https://github.com/nielslange/smntcs-custom-logo-link/workflows/Deploy%20to%20WordPress.org/badge.svg)
 
-**Contributors:** nielslange, timbre-design
-**Donate link:** https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
-**Tags:** Custom Logo Link, Logo Link
-**Stable tag:** 1.15
-**Requires at least:** 3.4
-**Requires PHP:** 5.6
-**Tested up to:** 5.7
-**License:** GPL3+
-**License URI:** http://www.gnu.org/licenses/gpl.html
-
 ## Description
 
 Allows to add a custom link to the image and textual logo.

@@ -3,40 +3,40 @@ name: Run PHPCS, PHPLint and Cypress
 on: [pull_request]
 
 jobs:
-    PHPCS:
-        runs-on: ubuntu-latest
+    # PHPCS:
+    #     runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
+    #     steps:
+    #         - name: Checkout code
+    #           uses: actions/checkout@v2
 
-            - name: Install Composer dependencies
-              uses: ramsey/composer-install@v1
+    #         - name: Install Composer dependencies
+    #           uses: ramsey/composer-install@v1
 
-            - name: Show PHPCS sniffs
-              run: ./vendor/bin/phpcs -i
+    #         - name: Show PHPCS sniffs
+    #           run: ./vendor/bin/phpcs -i
 
-            - name: Show PHPCS version
-              run: ./vendor/bin/phpcs --version
+    #         - name: Show PHPCS version
+    #           run: ./vendor/bin/phpcs --version
 
-            - name: Run PHP_CodeSniffer
-              run: composer phpcs
+    #         - name: Run PHP_CodeSniffer
+    #           run: composer phpcs
 
-    PHPLint:
-        runs-on: ubuntu-latest
+    # PHPLint:
+    #     runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
+    #     steps:
+    #         - name: Checkout code
+    #           uses: actions/checkout@v2
 
-            - name: Install Composer dependencies
-              uses: ramsey/composer-install@v1
+    #         - name: Install Composer dependencies
+    #           uses: ramsey/composer-install@v1
 
-            - name: Show PHPLint version info
-              run: ./vendor/bin/phplint --version
+    #         - name: Show PHPLint version info
+    #           run: ./vendor/bin/phplint --version
 
-            - name: Run PHPLint
-              run: composer phplint
+    #         - name: Run PHPLint
+    #           run: composer phplint
 
     Cypress:
         runs-on: ubuntu-latest
@@ -55,15 +55,18 @@ jobs:
             - name: Start testing environment
               run: npm run wp-env start
 
-            - name: Configure testing environment
+            - name: Start testing environment
               run: |
-                  chmod +x cypress/bin/setup.sh
-                  cypress/bin/setup.sh
-              shell: bash
-
-            - name: Cypress run
-              uses: cypress-io/github-action@v2
-              with:
-                  wait-on: 'http://localhost:8889'
-                  browser: chrome
-                  headless: true
+                  wp-env run tests-cli wp theme install astra
+                  wp-env run tests-cli wp theme install atomic-blocks
+            # - name: Configure testing environment
+            #   run: |
+            #       chmod +x cypress/bin/setup.sh
+            #       cypress/bin/setup.sh
+            #   shell: bash
+            # - name: Cypress run
+            #   uses: cypress-io/github-action@v2
+            #   with:
+            #       wait-on: 'http://localhost:8889'
+            #       browser: chrome
+            #       headless: true
