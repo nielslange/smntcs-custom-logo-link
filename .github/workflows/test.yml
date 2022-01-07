@@ -55,10 +55,10 @@ jobs:
             - name: Start testing environment
               run: npm run wp-env start
 
-            - name: Start testing environment
+            - name: Configure testing environment
               run: |
-                  wp-env run tests-cli wp theme install astra
-                  wp-env run tests-cli wp theme install atomic-blocks
+                  npm run wp-env run tests-cli wp theme install astra
+                  npm run wp-env run tests-cli wp theme install atomic-blocks
             # - name: Configure testing environment
             #   run: |
             #       chmod +x cypress/bin/setup.sh
