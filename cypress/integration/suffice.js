@@ -4,7 +4,7 @@ describe( 'Suffice', () => {
 	} );
 
 	it( 'can ensure the Suffice theme is activated', () => {
-		cy.checkThemeActivation( 'suffice' );
+		cy.checkThemeActivation( 'Suffice' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

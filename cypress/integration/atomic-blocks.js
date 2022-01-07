@@ -4,7 +4,7 @@ describe( 'Atomic Blocks', () => {
 	} );
 
 	it( 'can ensure the Atomic Blocks theme is activated', () => {
-		cy.checkThemeActivation( 'atomic-blocks' );
+		cy.checkThemeActivation( 'Atomic Blocks' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

@@ -4,7 +4,7 @@ describe( 'Hestia', () => {
 	} );
 
 	it( 'can ensure the Hestia theme is activated', () => {
-		cy.checkThemeActivation( 'hestia' );
+		cy.checkThemeActivation( 'Hestia' );
 	} );
 
 	it( 'can ensure the site title or logo shows the custom link', () => {

@@ -4,7 +4,7 @@ describe( 'Hello Elementor', () => {
 	} );
 
 	it( 'can ensure the Hello Elementor theme is activated', () => {
-		cy.checkThemeActivation( 'hello-elementor' );
+		cy.checkThemeActivation( 'Hello Elementor' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

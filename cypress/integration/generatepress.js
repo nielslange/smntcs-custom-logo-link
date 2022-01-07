@@ -4,7 +4,7 @@ describe( 'GeneratePress', () => {
 	} );
 
 	it( 'can ensure the GeneratePress theme is activated', () => {
-		cy.checkThemeActivation( 'generatepress' );
+		cy.checkThemeActivation( 'GeneratePress' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

@@ -4,7 +4,7 @@ describe( 'Nevertheless', () => {
 	} );
 
 	it( 'can ensure the Nevertheless theme is activated', () => {
-		cy.checkThemeActivation( 'nevertheless' );
+		cy.checkThemeActivation( 'Nevertheless' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

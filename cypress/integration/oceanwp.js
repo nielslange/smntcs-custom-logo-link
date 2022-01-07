@@ -4,7 +4,7 @@ describe( 'OceanWP', () => {
 	} );
 
 	it( 'can ensure the OceanWP theme is activated', () => {
-		cy.checkThemeActivation( 'oceanwp' );
+		cy.checkThemeActivation( 'OceanWP' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

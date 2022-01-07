@@ -35,7 +35,7 @@ Cypress.Commands.add( 'checkThemeActivation', ( slug ) => {
 	cy.viewport( 1200, 2000 );
 	cy.visit( 'http://localhost:8889/wp-admin/themes.php' ).wait( 500 );
 	cy.get( 'body' ).then( ( $body ) => {
-		cy.get( 'div[data-slug="' + slug + '"] a.activate' ).click();
+		cy.get( 'a[aria-label="Activate ' + slug + '"]' ).click();
 	} );
 } );
 

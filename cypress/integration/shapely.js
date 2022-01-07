@@ -4,7 +4,7 @@ describe( 'Shapely', () => {
 	} );
 
 	it( 'can ensure the Shapely theme is activated', () => {
-		cy.checkThemeActivation( 'shapely' );
+		cy.checkThemeActivation( 'Shapely' );
 	} );
 
 	it( 'can ensure the site title or logo shows the custom link', () => {

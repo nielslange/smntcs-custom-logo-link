@@ -4,7 +4,7 @@ describe( 'Storefront', () => {
 	} );
 
 	it( 'can ensure the Storefront theme is activated', () => {
-		cy.checkThemeActivation( 'storefront' );
+		cy.checkThemeActivation( 'Storefront' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

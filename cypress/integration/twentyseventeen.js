@@ -4,7 +4,7 @@ describe( 'Twenty Seventeen', () => {
 	} );
 
 	it( 'can ensure the Twenty Seventeen theme is activated', () => {
-		cy.checkThemeActivation( 'twentyseventeen' );
+		cy.checkThemeActivation( 'Twenty Seventeen' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

@@ -123,59 +123,59 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_custom
 function smntcs_custom_logo_link_enqueue() {
 	switch ( get_template() ) {
 		case 'astra':
-			load_template( 'themes/astra.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/astra.php';
 			break;
 		case 'atomic-blocks':
-			load_template( 'themes/atomic-blocks.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/atomic-blocks.php';
 			break;
 		case 'blocksy':
-			load_template( 'themes/blocksy.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/blocksy.php';
 			break;
 		case 'colormag':
-			load_template( 'themes/colormag.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/colormag.php';
 			break;
 		case 'generatepress':
-			load_template( 'themes/generatepress.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/generatepress.php';
 			break;
 		case 'hello-elementor':
-			load_template( 'themes/hello-elementor.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/hello-elementor.php';
 			break;
 		case 'hestia':
-			load_template( 'themes/hestia.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/hestia.php';
 			break;
 		case 'neve':
-			load_template( 'themes/neve.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/neve.php';
 			break;
 		case 'nevertheless':
-			load_template( 'themes/nevertheless.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/nevertheless.php';
 			break;
 		case 'oceanwp':
-			load_template( 'themes/oceanwp.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/oceanwp.php';
 			break;
 		case 'shapely':
-			load_template( 'themes/shapely.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/shapely.php';
 			break;
 		case 'suffice':
-			load_template( 'themes/suffice.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/suffice.php';
 			break;
 		case 'storefront':
-			load_template( 'themes/storefront.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/storefront.php';
 			break;
 		case 'sydney':
-			load_template( 'themes/sydney.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/sydney.php';
 			break;
 		case 'twentyfifteen':
 		case 'twentysixteen':
 		case 'twentyseventeen':
 		case 'twentynineteen':
 		case 'twentytwenty':
-			load_template( 'themes/twenty.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/twenty.php';
 			break;
 		case 'xi-portfolio':
-			load_template( 'themes/xi-portfolio.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/xi-portfolio.php';
 			break;
 		default:
-			load_template( 'themes/default.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'themes/default.php';
 			break;
 	}
 

@@ -4,7 +4,7 @@ describe( 'Sydney', () => {
 	} );
 
 	it( 'can ensure the Sydney theme is activated', () => {
-		cy.checkThemeActivation( 'sydney' );
+		cy.checkThemeActivation( 'Sydney' );
 	} );
 
 	it( 'can ensure the site title or logo shows the custom link', () => {

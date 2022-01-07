@@ -4,7 +4,7 @@ describe( 'Blocksy', () => {
 	} );
 
 	it( 'can ensure the Blocksy theme is activated', () => {
-		cy.checkThemeActivation( 'blocksy' );
+		cy.checkThemeActivation( 'Blocksy' );
 	} );
 
 	it( 'can ensure the site title shows the custom link', () => {

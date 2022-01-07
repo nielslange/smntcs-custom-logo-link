@@ -4,7 +4,7 @@ describe( 'Neve', () => {
 	} );
 
 	it( 'can ensure the Neve theme is activated', () => {
-		cy.checkThemeActivation( 'neve' );
+		cy.checkThemeActivation( 'Neve' );
 	} );
 
 	it( 'can ensure the site title or logo shows the custom link', () => {
