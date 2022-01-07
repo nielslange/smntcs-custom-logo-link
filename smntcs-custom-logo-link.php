@@ -6,12 +6,12 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-custom-logo-link
- * Version: 1.15
+ * Version: 1.16
+ * Tested up to: 5.8
  * Requires at least: 3.4
  * Requires PHP: 5.6
- * Tested up to: 5.7
- * License: GPL3+
- * License URI: https://www.gnu.org/licenses/gpl.html
+ * License: GPLv2+
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  *
  * @category   Plugin
  * @package    WordPress
@@ -20,20 +20,8 @@
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
-/**
- * Avoid direct plugin access
- */
-if ( ! defined( 'ABSPATH' ) ) {
-	die( '¯\_(ツ)_/¯' );
-}
-
-/**
- * Load text domain
- */
-function smntcs_custom_logo_link_load_textdomain() {
-	load_plugin_textdomain( 'smntcs-custom-logo-link', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'smntcs_custom_logo_link_load_textdomain' );
+// Avoid direct plugin access
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Add custom link section to WordPress Customizer

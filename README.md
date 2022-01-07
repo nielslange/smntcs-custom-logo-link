@@ -1,14 +1,14 @@
 # SMNTCS Custom Logo Link
 
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
-[![Build Status](https://travis-ci.org/nielslange/smntcs-custom-logo-link.svg?branch=trunk)](https://travis-ci.org/nielslange/smntcs-custom-logo-link)
-[![GPLv3 License](https://img.shields.io/github/license/nielslange/smntcs-custom-logo-link.svg)](https://www.gnu.org/licenses/gpl.html)
-[![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-custom-logo-link/wp-badge.svg)](https://plugintests.com/plugins/smntcs-custom-logo-link/latest)
-[![Compatible to PHP version](https://plugintests.com/plugins/smntcs-custom-logo-link/php-badge.svg)](https://plugintests.com/plugins/smntcs-custom-logo-link/latest)
-[![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-custom-logo-link.svg)](https://wordpress.org/plugins/smntcs-custom-logo-link/)
-[![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-custom-logo-link.svg)](https://wordpress.org/plugins/smntcs-custom-logo-link/)
-[![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-custom-logo-link.svg)](https://wordpress.org/plugins/smntcs-custom-logo-link/)
-![Deploy to WordPress.org](https://github.com/nielslange/smntcs-custom-logo-link/workflows/Deploy%20to%20WordPress.org/badge.svg)
+![Support Level](https://img.shields.io/badge/support-active-green.svg)
+![Build Status](https://github.com/nielslange/smntcs-custom-logo-link/actions/workflows/test.yml/badge.svg)
+![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-custom-logo-link.svg)
+![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-custom-logo-link/wp-badge.svg)
+![Compatible to PHP version](https://plugintests.com/plugins/smntcs-custom-logo-link/php-badge.svg)
+![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-custom-logo-link.svg)
+![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-custom-logo-link.svg)
+![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-custom-logo-link.svg)
+[Deploy to WordPress.org](https://github.com/nielslange/smntcs-custom-logo-link/workflows/Deploy%20to%20WordPress.org/badge.svg)
 
 ## Description
 
@@ -16,12 +16,11 @@ Allows to add a custom link to the image and textual logo.
 
 ## Compatible with
 
-**WordPress.org themes:**
-
 -   [Astra](https://wordpress.org/themes/astra/)
 -   [Atomic Blocks](https://wordpress.org/themes/atomic-blocks/)
 -   [Blocksy](https://wordpress.org/themes/blocksy/)
 -   [ColorMag](https://wordpress.org/themes/colormag/)
+-   [Education Hub](https://wordpress.org/themes/education-hub/)
 -   [GeneratePress](https://wordpress.org/themes/generatepress/)
 -   [Hello Elementor](https://wordpress.org/themes/hello-elementor/)
 -   [Hestia](https://wordpress.org/themes/hestia/)
@@ -37,7 +36,7 @@ Allows to add a custom link to the image and textual logo.
 -   [Twenty Seventeen](https://wordpress.org/themes/twentyseventeen/)
 -   [Twenty Sixteen](https://wordpress.org/themes/twentysixteen/)
 -   [Twenty Twenty](https://wordpress.org/themes/twentytwenty/)
--   [xi-portfolio](https://wordpress.org/themes/xi-portfolio/)
+-   [XI Portfolio](https://wordpress.org/themes/xi-portfolio/)
 
 ## Installation
 
@@ -50,6 +49,12 @@ Allows to add a custom link to the image and textual logo.
 You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link/.
 
 ## Changelog
+
+### 1.16 (2022.01.07)
+
+-   Tested up to 5.8
+-   [Add support for Education Hub theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/64)
+-   Removed support for premium themes
 
 ### 1.15 (2021.03.28)
 

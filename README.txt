@@ -3,12 +3,12 @@
 Contributors: nielslange, timbre-design
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.15
+Stable tag: 1.16
+Tested up to: 5.8
 Requires at least: 3.4
-Requires PHP: 5.6
-Tested up to: 5.7
-License: GPL3+
-License URI: http://www.gnu.org/licenses/gpl.html
+Requires PHP: 5.8
+License: GPLv2+
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Allows to customize the logo link.
 
@@ -18,33 +18,27 @@ Allows to add a custom link to the image and textual logo.
 
 === Compatible with ===
 
-**WordPress.org themes**
-
-* [Astra](https://wordpress.org/themes/astra/) → 1,000,000+ active installs
-* [Atomic Blocks](https://wordpress.org/themes/atomic-blocks/) → 2,000+ active installs
-* [ColorMag](https://wordpress.org/themes/colormag/) → 100,000+ active installs
-* [GeneratePress](https://wordpress.org/themes/generatepress/) → 200,000+ active installs
-* [Hello Elementor](https://wordpress.org/themes/hello-elementor/) → 200,000+ active installs
-* [Hestia](https://wordpress.org/themes/hestia/) → 100,000+ active installs
-* [Neve](https://wordpress.org/themes/neve/) → 100,000+ active installs
-* [Nevertheless](https://wordpress.org/themes/nevertheless/) → 900+ active installs
-* [OceanWP](https://wordpress.org/themes/oceanwp/) → 500,000+ active installs
-* [Shapely](https://wordpress.org/themes/shapely/) → 100,000+ active installs
-* [Storefront](https://wordpress.org/themes/storefront/) → 200,000+ active installs
-* [Suffice](https://wordpress.org/themes/suffice/) → 5,000+ active installs
-* [Sydney](https://wordpress.org/themes/sydney/) → 100,000+ active installs
-* [Twenty Fifteen](https://wordpress.org/themes/twentyfifteen/) → 200,000+ active installs
-* [Twenty Nineteen](https://wordpress.org/themes/twentynineteen/) → 1,000,000+ active installs
-* [Twenty Seventeen](https://wordpress.org/themes/twentyseventeen/) → 1,000,000+ active installs
-* [Twenty Sixteen](https://wordpress.org/themes/twentysixteen/) → 400,000+ active installs
-* [Twenty Twenty](https://wordpress.org/themes/twentytwenty/) → 1,000,000+ active installs
-* [xi-portfolio](https://wordpress.org/themes/xi-portfolio/) → 400+ active installs
-
-**ThemeForest themes**
-
-* [Cuisine](https://themeforest.net/item/cuisine-responsive-restaurant-wordpress-theme/15683899)
-* [Lore](https://themeforest.net/item/lore-elegant-knowledge-base-wordpress-theme/16965024)
-* [Osmosis](https://themeforest.net/item/osmosis-responsive-multipurpose-theme/9839949)
+* [Astra](https://wordpress.org/themes/astra/)
+* [Atomic Blocks](https://wordpress.org/themes/atomic-blocks/)
+* [Blocksy](https://wordpress.org/themes/blocksy/)
+* [ColorMag](https://wordpress.org/themes/colormag/)
+* [Education Hub](https://wordpress.org/themes/education-hub/)
+* [GeneratePress](https://wordpress.org/themes/generatepress/)
+* [Hello Elementor](https://wordpress.org/themes/hello-elementor/)
+* [Hestia](https://wordpress.org/themes/hestia/)
+* [Neve](https://wordpress.org/themes/neve/)
+* [Nevertheless](https://wordpress.org/themes/nevertheless/)
+* [OceanWP](https://wordpress.org/themes/oceanwp/)
+* [Shapely](https://wordpress.org/themes/shapely/)
+* [Storefront](https://wordpress.org/themes/storefront/)
+* [Suffice](https://wordpress.org/themes/suffice/)
+* [Sydney](https://wordpress.org/themes/sydney/)
+* [Twenty Fifteen](https://wordpress.org/themes/twentyfifteen/)
+* [Twenty Nineteen](https://wordpress.org/themes/twentynineteen/)
+* [Twenty Seventeen](https://wordpress.org/themes/twentyseventeen/)
+* [Twenty Sixteen](https://wordpress.org/themes/twentysixteen/)
+* [Twenty Twenty](https://wordpress.org/themes/twentytwenty/)
+* [XI Portfolio](https://wordpress.org/themes/xi-portfolio/)
 
 == Installation ==
 
@@ -57,6 +51,11 @@ Allows to add a custom link to the image and textual logo.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.16 (2022.01.07) =
+* Tested up to 5.8
+* [Add support for Education Hub theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/64)
+* Removed support for premium themes
 
 = 1.15 (2021.03.28) =
 * Tested up to 5.7
