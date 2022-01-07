@@ -59,6 +59,6 @@
 		"test:theme-twentytwenty": "cypress run --headless --browser chrome --spec 'cypress/integration/twentytwenty.js'",
 		"test:theme-xi-portfolio": "cypress run --headless --browser chrome --spec 'cypress/integration/xi-portfolio.js'",
 		"wp-env": "wp-env",
-		"wp-env:config": ". ./cypress/bin/setup.sh"
+		"wp-env:config": ". cypress/bin/setup.sh"
 	}
 }
