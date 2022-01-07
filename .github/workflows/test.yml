@@ -56,7 +56,10 @@ jobs:
               run: npm run wp-env start
 
             - name: Configure testing environment
-              run: npm run wp-env:config
+              run: |
+                  chmod +x ./cypress/bin/setup.sh
+                  ./cypress/bin/setup.sh
+              shell: bash
 
             - name: Cypress run
               uses: cypress-io/github-action@v2

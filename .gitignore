@@ -1,8 +1,6 @@
-/.DS_Store
 cypress
 node_modules
 vendor
-composer.lock
-package-lock.json
+/.DS_Store
 /.phplint.cache
 /.phpcs.cache
