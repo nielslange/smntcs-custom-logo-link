@@ -50,6 +50,12 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-custom-logo-link
 
 ## Changelog
 
+### 1.17 (2022.05.30)
+
+-   Tested up to 6.0
+-   [Add support for Customify theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/75)
+-   [Fix mobile support for the Astra theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/79)
+
 ### 1.16 (2022.01.07)
 
 -   Tested up to 5.8

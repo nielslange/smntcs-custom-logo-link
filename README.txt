@@ -1,13 +1,12 @@
  === SMNTCS Custom Logo Link ===
 
 Contributors: nielslange, timbre-design
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C38PCKAFCBJ2U
 Tags: Custom Logo Link, Logo Link
-Stable tag: 1.16
-Tested up to: 5.8
+Stable tag: 1.17
+Tested up to: 6.0
 Requires at least: 3.4
 Requires PHP: 5.8
-License: GPLv2+
+License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Allows to customize the logo link.
@@ -22,6 +21,7 @@ Allows to add a custom link to the image and textual logo.
 * [Atomic Blocks](https://wordpress.org/themes/atomic-blocks/)
 * [Blocksy](https://wordpress.org/themes/blocksy/)
 * [ColorMag](https://wordpress.org/themes/colormag/)
+* [Customify](https://wordpress.org/themes/customify/)
 * [Education Hub](https://wordpress.org/themes/education-hub/)
 * [GeneratePress](https://wordpress.org/themes/generatepress/)
 * [Hello Elementor](https://wordpress.org/themes/hello-elementor/)
@@ -42,15 +42,20 @@ Allows to add a custom link to the image and textual logo.
 
 == Installation ==
 
-1. Upload 'smntcs-custom-logo-link' to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to 'Appearance' » 'Customize' » 'Logo Link' and provide the logo link
+1. Upload `smntcs-custom-logo-link` to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the `Plugins` menu in WordPress.
+3. Go to `Appearance` » `Customize` » `Logo Link` and provide the logo link.
 
 == Contribute ==
 
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.17 (2022.05.30) =
+* Tested up to 6.0
+* [Add support for Customify theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/75)
+* [Fix mobile support for the Astra theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/79)
 
 = 1.16 (2022.01.07) =
 * Tested up to 5.8
