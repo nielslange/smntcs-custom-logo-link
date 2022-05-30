@@ -44,11 +44,14 @@ Cypress.Commands.add( 'checkSiteTitleLink', ( selector ) => {
 	cy.visit( 'http://localhost:8889/' ).wait( 500 );
 	cy.get( 'body' ).then( ( $body ) => {
 		if ( $body.find( selector ).length > 0 ) {
-			cy.get( selector ).should(
-				'have.attr',
-				'href',
-				'https://www.instagram.com/'
-			);
+			cy.get( selector ).each( ( $el, index, $list ) => {
+				console.log( $el );
+				cy.wrap( $el ).should(
+					'have.attr',
+					'href',
+					'https://www.instagram.com/'
+				);
+			} );
 		}
 	} );
 } );
@@ -58,11 +61,14 @@ Cypress.Commands.add( 'checkSiteLogoLink', ( selector ) => {
 	cy.visit( 'http://localhost:8889/' ).wait( 500 );
 	cy.get( 'body' ).then( ( $body ) => {
 		if ( $body.find( selector ).length > 0 ) {
-			cy.get( selector ).should(
-				'have.attr',
-				'href',
-				'https://www.instagram.com/'
-			);
+			cy.get( selector ).each( ( $el, index, $list ) => {
+				console.log( $el );
+				cy.wrap( $el ).should(
+					'have.attr',
+					'href',
+					'https://www.instagram.com/'
+				);
+			} );
 		}
 	} );
 } );

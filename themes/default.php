@@ -1,6 +1,20 @@
 <?php
 /**
- * Handle default custom logo link
+ * Handle default custom logo link for the following themes:
+ *
+ * ✅ https://wordpress.org/themes/astra/
+ * ✅ https://wordpress.org/themes/customify/
+ * ✅ https://wordpress.org/themes/education-hub/
+ * ✅ https://wordpress.org/themes/hello-elementor/
+ * ✅ https://wordpress.org/themes/nevertheless/
+ * ✅ https://wordpress.org/themes/storefront/
+ * ✅ https://wordpress.org/themes/suffice/
+ * ✅ https://wordpress.org/themes/twentyfifteen/
+ * ✅ https://wordpress.org/themes/twentysixteen/
+ * ✅ https://wordpress.org/themes/twentyseventeen/
+ * ✅ https://wordpress.org/themes/twentynineteen/
+ * ✅ https://wordpress.org/themes/twentytwenty/
+ * ✅ https://wordpress.org/themes/xi-portfolio/
  *
  * @category   Plugin
  * @package    WordPress
@@ -13,10 +27,12 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			if ( document.querySelector(".site-title a") ) {
-				document.querySelector(".site-title a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+				const links = document.querySelectorAll(".site-title a");
+				links.forEach(link => link.setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>"));
 			}
 			if ( document.querySelector("a.custom-logo-link") ) {
-				document.querySelector("a.custom-logo-link").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+				const links = document.querySelectorAll("a.custom-logo-link");
+				links.forEach(link => link.setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>"));
 			}
 		});
 	</script>
@@ -26,10 +42,12 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				if ( document.querySelector(".site-title a") ) {
-					document.querySelector(".site-title a").setAttribute("target", "_blank");
+					const links = document.querySelectorAll(".site-title a");
+					links.forEach( link => link.setAttribute("target", "_blank"));
 				}
 				if (document.querySelector("a.custom-logo-link")) {
-					document.querySelector("a.custom-logo-link").setAttribute("target", "_blank");
+					const links = document.querySelectorAll("a.custom-logo-link");
+					links.forEach( link => link.setAttribute("target", "_blank"));
 				}
 			});
 		</script>
@@ -39,10 +57,12 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				if ( document.querySelector(".site-title a") ) {
-					document.querySelector(".site-title a").setAttribute("target", "_self");
+					const links = document.querySelectorAll(".site-title a");
+					links.forEach( link => link.setAttribute("target", "_self"));
 				}
 				if (document.querySelector("a.custom-logo-link")) {
-					document.querySelector("a.custom-logo-link").setAttribute("target", "_self");
+					const links = document.querySelectorAll("a.custom-logo-link");
+					links.forEach( link => link.setAttribute("target", "_self"));
 				}
 			});
 		</script>

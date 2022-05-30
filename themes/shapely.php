@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for Shapely theme
+ * Handle custom logo link for the Shapely theme
  *
- * ✅ Shapely: https://wordpress.org/themes/shapely/
+ * ✅ https://wordpress.org/themes/shapely/
 
  * @category   Plugin
  * @package    WordPress

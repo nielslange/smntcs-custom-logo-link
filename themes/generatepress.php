@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for GeneratePress theme
+ * Handle custom logo link for the GeneratePress theme
  *
- * ✅ GeneratePress: https://wordpress.org/themes/generatepress/
+ * ✅ https://wordpress.org/themes/generatepress/
 
  * @category   Plugin
  * @package    WordPress
@@ -15,10 +15,12 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			if ( document.querySelector(".main-title a") ) {
-				document.querySelector(".main-title a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+				const links = document.querySelectorAll(".main-title a");
+				links.forEach(link => link.setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>"));
 			}
 			if ( document.querySelector(".site-logo a") ) {
-				document.querySelector(".site-logo a").setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>");
+				const links = document.querySelectorAll(".site-logo a");
+				links.forEach(link => link.setAttribute("href", "<?php print( esc_url( get_option( 'smntcs_custom_logo_link_url' ) ) ); ?>"));
 			}
 		});
 	</script>
@@ -28,10 +30,12 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				if ( document.querySelector(".main-title a") ) {
-					document.querySelector(".main-title a").setAttribute("target", "_blank");
+					const links = document.querySelectorAll(".main-title a");
+					links.forEach( link => link.setAttribute("target", "_blank"));
 				}
 				if ( document.querySelector(".site-logo a") ) {
-					document.querySelector(".site-logo a").setAttribute("target", "_blank");
+					const links = document.querySelectorAll(".site-logo a");
+					links.forEach( link => link.setAttribute("target", "_blank"));
 				}
 			});
 		</script>
@@ -41,10 +45,12 @@ if ( get_option( 'smntcs_custom_logo_link_url' ) ) { ?>
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				if ( document.querySelector(".main-title a") ) {
-					document.querySelector(".main-title a").setAttribute("target", "_self");
+					const links = document.querySelectorAll(".main-title a");
+					links.forEach( link => link.setAttribute("target", "_self"));
 				}
 				if ( document.querySelector(".site-logo a") ) {
-					document.querySelector(".site-logo a").setAttribute("target", "_self");
+					const links = document.querySelectorAll(".site-logo a");
+					links.forEach( link => link.setAttribute("target", "_self"));
 				}
 			});
 		</script>
