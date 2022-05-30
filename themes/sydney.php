@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for Sydney theme
+ * Handle custom logo link for the Sydney theme
  *
- * ✅ Sydney: https://wordpress.org/themes/sydney/
+ * ✅ https://wordpress.org/themes/sydney/
 
  * @category   Plugin
  * @package    WordPress

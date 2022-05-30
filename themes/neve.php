@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for Neve theme
+ * Handle custom logo link for the Neve theme
  *
- * Neve: https://wordpress.org/themes/neve/
+ * ✅ https://wordpress.org/themes/neve/
 
  * @category   Plugin
  * @package    WordPress

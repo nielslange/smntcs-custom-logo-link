@@ -20,7 +20,7 @@
  * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
-// Avoid direct plugin access
+// Avoid direct plugin access.
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -110,26 +110,11 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_custom
  */
 function smntcs_custom_logo_link_enqueue() {
 	switch ( get_template() ) {
-		case 'astra':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/astra.php';
-			break;
-		case 'atomic-blocks':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/atomic-blocks.php';
-			break;
-		case 'blocksy':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/blocksy.php';
-			break;
 		case 'colormag':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/colormag.php';
 			break;
-		case 'education-hub':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/education-hub.php';
-			break;
 		case 'generatepress':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/generatepress.php';
-			break;
-		case 'hello-elementor':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/hello-elementor.php';
 			break;
 		case 'hestia':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/hestia.php';
@@ -137,38 +122,18 @@ function smntcs_custom_logo_link_enqueue() {
 		case 'neve':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/neve.php';
 			break;
-		case 'nevertheless':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/nevertheless.php';
-			break;
 		case 'oceanwp':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/oceanwp.php';
 			break;
 		case 'shapely':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/shapely.php';
 			break;
-		case 'suffice':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/suffice.php';
-			break;
-		case 'storefront':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/storefront.php';
-			break;
 		case 'sydney':
 			require_once plugin_dir_path( __FILE__ ) . 'themes/sydney.php';
-			break;
-		case 'twentyfifteen':
-		case 'twentysixteen':
-		case 'twentyseventeen':
-		case 'twentynineteen':
-		case 'twentytwenty':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/twenty.php';
-			break;
-		case 'xi-portfolio':
-			require_once plugin_dir_path( __FILE__ ) . 'themes/xi-portfolio.php';
 			break;
 		default:
 			require_once plugin_dir_path( __FILE__ ) . 'themes/default.php';
 			break;
 	}
-
 }
 add_action( 'wp_head', 'smntcs_custom_logo_link_enqueue' );

@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for Hestia theme
+ * Handle custom logo link for the Hestia theme
  *
- * ✅ Hestia: https://wordpress.org/themes/hestia/
+ * ✅ https://wordpress.org/themes/hestia/
 
  * @category   Plugin
  * @package    WordPress

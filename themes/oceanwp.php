@@ -1,8 +1,8 @@
 <?php
 /**
- * Handle custom logo link for OceanWP theme
+ * Handle custom logo link for the OceanWP theme
  *
- * ✅ OceanWP: https://wordpress.org/themes/oceanwp/
+ * ✅ https://wordpress.org/themes/oceanwp/
 
  * @category   Plugin
  * @package    WordPress
