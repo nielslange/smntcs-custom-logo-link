@@ -1,25 +1,21 @@
 <?php
+
 /**
- * Plugin Name: SMNTCS Custom Logo Link
- * Plugin URI: https://github.com/nielslange/smntcs-custom-logo-link
- * Description: Allows to customize the logo link
- * Author: Niels Lange <info@nielslange.de>
- * Author URI: https://nielslange.de
- * Text Domain: smntcs-custom-logo-link
- * Version: 2.0
- * Requires at least: 3.4
- * Requires PHP: 5.6
- * License: GPL v2 or later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Plugin Name:         SMNTCS Custom Logo Link
+ * Plugin URI:          https://github.com/nielslange/smntcs-custom-logo-link
+ * Description:         Allows to customize the logo link
+ * Author:              Niels Lange <info@nielslange.de>
+ * Author URI:          https://nielslange.de
+ * Text Domain:         smntcs-custom-logo-link
+ * Version:             2.1
+ * Requires at least:   3.4
+ * Requires PHP:        5.6
+ * License:             GPL v2 or later
+ * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @category   Plugin
- * @package    WordPress
- * @subpackage SMNTCS Custom Logo Link
- * @author     Niels Lange <info@nielslange.de>
- * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @package SMNTCS_Custom_Logo_Link
  */
 
-// Avoid direct plugin access.
 defined( 'ABSPATH' ) || exit;
 
 /**

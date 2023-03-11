@@ -40,8 +40,8 @@
 		"test:theme-blocksy": "cypress run --headless --browser chrome --spec 'cypress/integration/blocksy.js'",
 		"test:theme-colormag": "cypress run --headless --browser chrome --spec 'cypress/integration/colormag.js'",
 		"test:theme-customify": "cypress run --headless --browser chrome --spec 'cypress/integration/customify.js'",
-		"test:theme-education-hub": "cypress run --headless --browser chrome --spec 'cypress/integration/education-hub.js'",
 		"test:theme-cuisine": "cypress run --headless --browser chrome --spec 'cypress/integration/cuisine.js'",
+		"test:theme-education-hub": "cypress run --headless --browser chrome --spec 'cypress/integration/education-hub.js'",
 		"test:theme-generatepress": "cypress run --headless --browser chrome --spec 'cypress/integration/generatepress.js'",
 		"test:theme-hello-elementor": "cypress run --headless --browser chrome --spec 'cypress/integration/hello-elementor.js'",
 		"test:theme-hestia": "cypress run --headless --browser chrome --spec 'cypress/integration/hestia.js'",
@@ -61,6 +61,6 @@
 		"test:theme-twentytwenty": "cypress run --headless --browser chrome --spec 'cypress/integration/twentytwenty.js'",
 		"test:theme-xi-portfolio": "cypress run --headless --browser chrome --spec 'cypress/integration/xi-portfolio.js'",
 		"wp-env": "wp-env",
-		"wp-env:config": ". cypress/bin/setup.sh"
+		"wp-env:rc": "wp-env run cli 'wp core update --version=6.2-RC1 && wp core update --version=6.2-RC1 --force'"
 	}
 }
