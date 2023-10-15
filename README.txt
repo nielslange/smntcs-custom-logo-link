@@ -3,7 +3,7 @@
 Contributors: 		nielslange, timbre-design
 Tags: 				Custom Logo Link, Logo Link
 Stable tag: 		2.2
-Test up to: 		6.4
+Tested up to: 		6.4
 Requires at least: 	3.4
 Requires PHP: 		5.8
 License: 			GPL v2 or later
