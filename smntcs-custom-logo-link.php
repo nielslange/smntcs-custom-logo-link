@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name:         SMNTCS Custom Logo Link
  * Plugin URI:          https://github.com/nielslange/smntcs-custom-logo-link
@@ -7,7 +6,7 @@
  * Author:              Niels Lange <info@nielslange.de>
  * Author URI:          https://nielslange.de
  * Text Domain:         smntcs-custom-logo-link
- * Version:             2.1
+ * Version:             2.2
  * Requires at least:   3.4
  * Requires PHP:        5.6
  * License:             GPL v2 or later
