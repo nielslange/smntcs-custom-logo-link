@@ -20,11 +20,11 @@ jobs:
             - name: Install Composer dependencies
               uses: ramsey/composer-install@v1
 
-            - name: Show ${matrix.tool} version info
-              run: ./vendor/bin/${{ matrix.tool,, }} --version
+            - name: Show version info of ${{ matrix.tool }}
+              run: ./vendor/bin/${{ matrix.tool }} --version
 
-            - name: Run ${matrix.tool}
-              run: composer ${{ matrix.tool,, }}
+            - name: Run ${{ matrix.tool }}
+              run: composer run-script ${{ matrix.tool }}
 
     Cypress:
         runs-on: ubuntu-latest
