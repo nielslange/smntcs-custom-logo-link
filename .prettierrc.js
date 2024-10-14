@@ -1,3 +1,14 @@
-// Import the default config file and expose it in the project root.
-// Useful for editor integrations.
-module.exports = require('@wordpress/prettier-config');
+const defaultConfig = require( '@wordpress/prettier-config' );
+
+module.exports = {
+	...defaultConfig,
+
+	overrides: [
+		{
+			files: '*.yml',
+			options: {
+				tabWidth: 2,
+			},
+		},
+	],
+};

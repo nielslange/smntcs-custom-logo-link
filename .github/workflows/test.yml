@@ -3,47 +3,47 @@ name: Run PHPCS, PHPLint, Psalm and Cypress
 on: [pull_request, push]
 
 jobs:
-    PHP_Tools:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                tool: [PHPCS, PHPLint, Psalm]
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
+  PHP_Tools:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tool: [phpcs, phplint, psalm]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-            - name: Set up PHP
-              uses: shivammathur/setup-php@v2
-              with:
-                  php-version: '8.2'
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
 
-            - name: Install Composer dependencies
-              uses: ramsey/composer-install@v1
+      - name: Install Composer dependencies
+        uses: ramsey/composer-install@v1
 
-            - name: Show version info of ${{ matrix.tool }}
-              run: ./vendor/bin/${{ matrix.tool }} --version
+      - name: Show version info of ${{ matrix.tool }}
+        run: ./vendor/bin/${{ matrix.tool }} --version
 
-            - name: Run ${{ matrix.tool }}
-              run: composer run-script ${{ matrix.tool }}
+      - name: Run ${{ matrix.tool }}
+        run: composer run-script ${{ matrix.tool }}
 
-    Cypress:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v2
+  Cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
 
-            - name: Install node
-              uses: actions/setup-node@v2
-              with:
-                  node-version: '14'
+      - name: Install node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
-            - name: Install dependencies
-              run: npm install
+      - name: Install dependencies
+        run: npm install
 
-            - name: Cypress run
-              uses: cypress-io/github-action@v2
-              with:
-                  start: npm run wp-env start
-                  wait-on: 'http://localhost:8888'
-                  browser: chrome
-                  headless: true
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm run wp-env start
+          wait-on: 'http://localhost:8888'
+          browser: chrome
+          headless: true
