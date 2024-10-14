@@ -2,8 +2,8 @@
 
 Contributors: 		nielslange, timbre-design
 Tags: 				Custom Logo Link, Logo Link
-Stable tag: 		2.2
-Tested up to: 		6.4
+Stable tag: 		2.3
+Tested up to: 		6.6
 Requires at least: 	3.4
 Requires PHP: 		5.8
 License: 			GPL v2 or later
@@ -52,41 +52,45 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Changelog ==
 
+= 2.3 (2024.10.14) =
+
+- Test up to WordPress 6.4
+
 = 2.2 (2023.10.15) =
 
-- Test up to 6.4
+- Test up to WordPress 6.4
 
 = 2.1 (2023.03.11) =
 
-- Test up to 6.2
+- Test up to WordPress 6.2
 
 = 2.0 (2022.11.30) =
 
-- Test up to 6.1
+- Test up to WordPress 6.1
 - [Improve support for Customify theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/75)
 
 = 1.17 (2022.05.30) =
 
-- Test up to 6.0
+- Test up to WordPress 6.0
 - [Add support for Customify theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/75)
 - [Fix mobile support for the Astra theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/79)
 
 = 1.16 (2022.01.07) =
 
-- Test up to 5.8
+- Test up to WordPress 5.8
 - [Add support for Education Hub theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/64)
 - Remove support for premium themes
 
 = 1.15 (2021.03.28) =
 
-- Test up to 5.7
+- Test up to WordPress 5.7
 - [Add support for Blocksy theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/50)
 - [Add support for Divi theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/56)
 - [Add pre-comit](https://github.com/nielslange/smntcs-custom-logo-link/issues/58)
 
 = 1.14 (2021.01.08) =
 
-- Test up to 5.4
+- Test up to WordPress 5.4
 
 = 1.13 (2020.06.01) =
 
@@ -106,7 +110,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 = 1.10 (2020.04.29) =
 
 - [Add support for Nevertheless theme](https://github.com/nielslange/smntcs-custom-logo-link/issues/11)
-- Test up to 5.4
+- Test up to WordPress 5.4
 
 = 1.9 (2020.04.14) =
 
@@ -133,7 +137,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 1.6 (2019.12.07) =
 
-- Test up to 5.3
+- Test up to WordPress 5.3
 - Replace jQuery with Vanilla JS
 
 = 1.5 (2019.12.07) =
@@ -151,7 +155,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 1.3 (2019.02.20) =
 
-- Test up to 5.1
+- Test up to WordPress 5.1
 
 = 1.2 (2019.01.12) =
 
