@@ -3,56 +3,28 @@ name: Run PHPCS, PHPLint, Psalm and Cypress
 on: [pull_request, push]
 
 jobs:
-    PHPCS:
+    PHP_Tools:
         runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                tool: [PHPCS, PHPLint, Psalm]
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
 
-            - name: Install Composer dependencies
-              uses: ramsey/composer-install@v1
-
-            - name: Show PHPCS sniffs
-              run: ./vendor/bin/phpcs -i
-
-            - name: Show PHPCS version
-              run: ./vendor/bin/phpcs --version
-
-            - name: Run PHP_CodeSniffer
-              run: composer phpcs
-
-    PHPLint:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
+            - name: Set up PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.2'
 
             - name: Install Composer dependencies
               uses: ramsey/composer-install@v1
 
-            - name: Show PHPLint version info
-              run: ./vendor/bin/phplint --version
+            - name: Show ${matrix.tool} version info
+              run: ./vendor/bin/${{ matrix.tool,, }} --version
 
-            - name: Run PHPLint
-              run: composer phplint
-
-    Psalm:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
-
-            - name: Install Composer dependencies
-              uses: ramsey/composer-install@v1
-
-            - name: Show PHPCS sniffs
-              run: ./vendor/bin/phpcs -i
-
-            - name: Show version info
-              run: ./vendor/bin/psalm --version
-
-            - name: Run Psalm
-              run: composer psalm
+            - name: Run ${matrix.tool}
+              run: composer ${{ matrix.tool,, }}
 
     Cypress:
         runs-on: ubuntu-latest
