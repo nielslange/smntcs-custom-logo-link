@@ -83,11 +83,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Cypress run
-        config-file: cypress.config.js
-        uses: cypress-io/github-action@v2
-        with:
-          start: npm run wp-env start
-          wait-on: 'http://localhost:8888'
-          browser: chrome
-          headless: true
+      - name: Start local server
+        run: npm run wp-env start
+
+      - name: Wait for server to be ready
+        run: npx wait-on http://localhost:8888
+
+      - name: Run Cypress tests
+        run: npx cypress run --config-file=cypress.config.js --browser chrome --headless
