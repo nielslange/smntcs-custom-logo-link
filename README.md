@@ -1,7 +1,7 @@
 # SMNTCS Custom Logo Link
 
 ![Support Level](https://img.shields.io/badge/support-active-green.svg)
-![Build Status](https://github.com/nielslange/smntcs-custom-logo-link/actions/workflows/test.yml/badge.svg)
+![Test Status](https://github.com/nielslange/smntcs-custom-logo-link/actions/workflows/test.yml/badge.svg)
 ![Deploy Status](https://github.com/nielslange/smntcs-custom-logo-link/actions/workflows/deploy.yml/badge.svg)
 ![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-custom-logo-link.svg)
 ![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-custom-logo-link/wp-badge.svg)
