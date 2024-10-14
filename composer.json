@@ -16,7 +16,7 @@
 		}
 	],
 	"require": {
-		"php": ">=7.3"
+		"php": ">=8.1.2"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "1.0.0",
