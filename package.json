@@ -34,7 +34,7 @@
 		"phplint": "composer phplint",
 		"test": "npm-run-all --parallel phpcs phplint",
 		"test:e2e": "cypress run --headless --browser chrome",
-		"test:e2e-dev": "cypress open",
+		"test:e2e-dev": "cypress open --config-file=cypress.config.js",
 		"test:theme-astra": "cypress run --headless --browser chrome --spec 'cypress/e2e/astra.cy.js'",
 		"test:theme-atomic-blocks": "cypress run --headless --browser chrome --spec 'cypress/e2e/atomic-blocks.cy.js'",
 		"test:theme-blocksy": "cypress run --headless --browser chrome --spec 'cypress/e2e/blocksy.cy.js'",
