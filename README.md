@@ -51,6 +51,10 @@ You can find the plugin on <https://wordpress.org/plugins/smntcs-custom-logo-lin
 
 ## Changelog
 
+### 2.4 (2024.12.31)
+
+- Test up to WordPress 6.7
+
 ### 2.3 (2024.10.14)
 
 -   Test up to WordPress 6.4

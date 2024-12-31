@@ -2,8 +2,8 @@
 
 Contributors: 		nielslange, timbre-design
 Tags: 				Custom Logo Link, Logo Link
-Stable tag: 		2.3
-Tested up to: 		6.6
+Stable tag: 		2.4
+Tested up to: 		6.7
 Requires at least: 	3.4
 Requires PHP: 		5.8
 License: 			GPL v2 or later
@@ -51,6 +51,10 @@ Allows to add a custom link to the image and textual logo.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 2.4 (2024.12.31) =
+
+- Test up to WordPress 6.7
 
 = 2.3 (2024.10.14) =
 
