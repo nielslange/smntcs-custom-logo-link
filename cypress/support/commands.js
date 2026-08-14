@@ -34,6 +34,10 @@ Cypress.Commands.add( 'checkPluginSettings', () => {
 Cypress.Commands.add( 'checkThemeActivation', ( slug ) => {
 	cy.viewport( 1200, 2000 );
 	cy.visit( 'http://localhost:8889/wp-admin/themes.php' ).wait( 500 );
+	// The theme grid renders in chunks on scroll, so scroll down to ensure
+	// all installed themes are present in the DOM before searching.
+	cy.scrollTo( 'bottom' ).wait( 500 );
+	cy.scrollTo( 'bottom' ).wait( 500 );
 	cy.get( 'body' ).then( ( $body ) => {
 		cy.get( 'a[aria-label="Activate ' + slug + '"]' ).click();
 	} );
