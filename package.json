@@ -20,12 +20,12 @@
 		"defaults"
 	],
 	"devDependencies": {
-		"@wordpress/env": "10.9.0",
-		"@wordpress/prettier-config": "4.9.0",
-		"cypress": "^13.15.0",
-		"eslint": "^9.12.0",
-		"npm-run-all": "4.1.5",
-		"prettier": "npm:wp-prettier@3.0.3"
+		"@wordpress/env": "11.16.0",
+		"@wordpress/prettier-config": "4.56.0",
+		"cypress": "^16.1.0",
+		"eslint": "^10.11.0",
+		"npm-run-all2": "^9.0.3",
+		"prettier": "npm:wp-prettier@3.9.6"
 	},
 	"scripts": {
 		"cypress": "cypress",
@@ -39,12 +39,13 @@
 		"test:theme-atomic-blocks": "cypress run --headless --browser chrome --spec 'cypress/e2e/atomic-blocks.cy.js'",
 		"test:theme-blocksy": "cypress run --headless --browser chrome --spec 'cypress/e2e/blocksy.cy.js'",
 		"test:theme-colormag": "cypress run --headless --browser chrome --spec 'cypress/e2e/colormag.cy.js'",
-		"test:theme-customify": "cypress run --headless --browser chrome --spec 'cypress/e2e/customify.cy.js'",
 		"test:theme-cuisine": "cypress run --headless --browser chrome --spec 'cypress/e2e/cuisine.cy.js'",
+		"test:theme-customify": "cypress run --headless --browser chrome --spec 'cypress/e2e/customify.cy.js'",
 		"test:theme-education-hub": "cypress run --headless --browser chrome --spec 'cypress/e2e/education-hub.cy.js'",
 		"test:theme-generatepress": "cypress run --headless --browser chrome --spec 'cypress/e2e/generatepress.cy.js'",
 		"test:theme-hello-elementor": "cypress run --headless --browser chrome --spec 'cypress/e2e/hello-elementor.cy.js'",
 		"test:theme-hestia": "cypress run --headless --browser chrome --spec 'cypress/e2e/hestia.cy.js'",
+		"test:theme-kadence": "cypress run --headless --browser chrome --spec 'cypress/e2e/kadence.cy.js'",
 		"test:theme-lore": "cypress run --headless --browser chrome --spec 'cypress/e2e/lore.cy.js'",
 		"test:theme-neve": "cypress run --headless --browser chrome --spec 'cypress/e2e/neve.cy.js'",
 		"test:theme-nevertheless": "cypress run --headless --browser chrome --spec 'cypress/e2e/nevertheless.cy.js'",
@@ -60,7 +61,8 @@
 		"test:theme-twentysixteen": "cypress run --headless --browser chrome --spec 'cypress/e2e/twentysixteen.cy.js'",
 		"test:theme-twentytwenty": "cypress run --headless --browser chrome --spec 'cypress/e2e/twentytwenty.cy.js'",
 		"test:theme-xi-portfolio": "cypress run --headless --browser chrome --spec 'cypress/e2e/xi-portfolio.cy.js'",
+		"test:theme-yuki": "cypress run --headless --browser chrome --spec 'cypress/e2e/yuki.cy.js'",
 		"wp-env": "wp-env",
-		"wp-env:rc": "wp-env run cli 'wp core update --version=6.2-RC1 && wp core update --version=6.2-RC1 --force'"
+		"wp-env:rc": "wp-env run cli sh -c 'wp core update --version=6.2-RC1 && wp core update --version=6.2-RC1 --force'"
 	}
 }
