@@ -17,6 +17,14 @@
  */
 // eslint-disable-next-line no-unused-vars
 module.exports = ( on, config ) => {
-	// `on` is used to hook into various events Cypress emits
-	// `config` is the resolved Cypress config
+	// GitHub-hosted runners have a small /dev/shm, which makes Chrome's
+	// renderer crash during long runs. Let Chrome use /tmp instead.
+	on( 'before:browser:launch', ( browser = {}, launchOptions ) => {
+		if ( browser.family === 'chromium' && browser.name !== 'electron' ) {
+			launchOptions.args.push( '--disable-dev-shm-usage' );
+		}
+		return launchOptions;
+	} );
+
+	return config;
 };
