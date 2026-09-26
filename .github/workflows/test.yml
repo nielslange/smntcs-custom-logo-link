@@ -90,4 +90,4 @@ jobs:
         run: npx wait-on http://localhost:8889
 
       - name: Run Cypress tests
-        run: pnpm exec cypress run --config-file=cypress.config.js --browser chrome --headless
+        run: pnpm exec cypress run --config-file=cypress.config.js --browser electron --headless
