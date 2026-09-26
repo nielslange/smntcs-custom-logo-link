@@ -149,9 +149,13 @@ function smntcs_custom_logo_link_get_selectors() {
 		'yuki'          => array( '.yuki-site-branding a', '.site-title a' ),
 	);
 
-	$default   = array( '.site-title a', 'a.custom-logo-link', '.wp-block-site-title a', '.wp-block-site-logo a' );
-	$template  = get_template();
-	$selectors = $themes[ $template ] ?? $default;
+	$default  = array( '.site-title a', 'a.custom-logo-link', '.wp-block-site-title a', '.wp-block-site-logo a' );
+	$template = get_template();
+
+	// Match on the text domain first, so a theme installed in a renamed folder
+	// (for example "hestia-1.2" or "hestia.latest-stable") is still recognised.
+	$text_domain = (string) wp_get_theme( $template )->get( 'TextDomain' );
+	$selectors   = $themes[ $text_domain ] ?? $themes[ $template ] ?? $default;
 
 	/**
 	 * Filters the CSS selectors of the links that get the custom URL.
