@@ -1,6 +1,8 @@
 {
 	"core": null,
-	"plugins": [ "." ],
+	"plugins": [
+		"."
+	],
 	"themes": [
 		"https://downloads.wordpress.org/theme/astra.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/atomic-blocks.latest-stable.zip",
@@ -11,18 +13,15 @@
 		"https://downloads.wordpress.org/theme/generatepress.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/hello-elementor.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/hestia.latest-stable.zip",
+		"https://downloads.wordpress.org/theme/kadence.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/neve.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/nevertheless.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/oceanwp.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/shapely.latest-stable.zip",
-		"https://downloads.wordpress.org/theme/suffice.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/storefront.latest-stable.zip",
+		"https://downloads.wordpress.org/theme/suffice.latest-stable.zip",
 		"https://downloads.wordpress.org/theme/sydney.latest-stable.zip",
-		"https://downloads.wordpress.org/theme/twentyfifteen.latest-stable.zip",
-		"https://downloads.wordpress.org/theme/twentysixteen.latest-stable.zip",
-		"https://downloads.wordpress.org/theme/twentyseventeen.latest-stable.zip",
-		"https://downloads.wordpress.org/theme/twentynineteen.latest-stable.zip",
-		"https://downloads.wordpress.org/theme/twentytwenty.latest-stable.zip",
-		"https://downloads.wordpress.org/theme/xi-portfolio.latest-stable.zip"
+		"https://downloads.wordpress.org/theme/xi-portfolio.latest-stable.zip",
+		"https://downloads.wordpress.org/theme/yuki.latest-stable.zip"
 	]
 }

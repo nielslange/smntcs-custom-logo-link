@@ -4,8 +4,8 @@
 ![Test Status](https://github.com/nielslange/smntcs-custom-logo-link/actions/workflows/test.yml/badge.svg)
 ![Deploy Status](https://github.com/nielslange/smntcs-custom-logo-link/actions/workflows/deploy.yml/badge.svg)
 ![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-custom-logo-link.svg)
-![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-custom-logo-link/wp-badge.svg)
-![Compatible to PHP version](https://plugintests.com/plugins/smntcs-custom-logo-link/php-badge.svg)
+![Compatible to WordPress version](https://img.shields.io/wordpress/plugin/tested/smntcs-custom-logo-link.svg)
+![Compatible to PHP version](https://img.shields.io/wordpress/plugin/required-php/smntcs-custom-logo-link.svg)
 ![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-custom-logo-link.svg)
 ![Active Installs](https://img.shields.io/wordpress/plugin/installs/smntcs-disable-rest-api-user-endpoints.svg)
 ![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-custom-logo-link.svg)
@@ -25,6 +25,8 @@ Allows to add a custom link to the image and textual logo.
 -   [GeneratePress](https://wordpress.org/themes/generatepress/)
 -   [Hello Elementor](https://wordpress.org/themes/hello-elementor/)
 -   [Hestia](https://wordpress.org/themes/hestia/)
+-   [Yuki](https://wordpress.org/themes/yuki/)
+-   [Kadence](https://wordpress.org/themes/kadence/)
 -   [Neve](https://wordpress.org/themes/neve/)
 -   [Nevertheless](https://wordpress.org/themes/nevertheless/)
 -   [OceanWP](https://wordpress.org/themes/oceanwp/)
@@ -50,6 +52,16 @@ Allows to add a custom link to the image and textual logo.
 You can find the plugin on <https://wordpress.org/plugins/smntcs-custom-logo-link/>.
 
 ## Changelog
+
+### 2.5 (2026.09.26)
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+- Add support for the Kadence and Yuki themes
+- Fix Hestia and other themes where only the first logo link was updated
+- Allow relative links such as a single dot or /en/
+- Update the logo link on the server for themes that use the core logo and for block themes, so it also works without JavaScript
+- Add the smntcs_custom_logo_link_selectors filter for theme developers
 
 ### 2.4 (2024.12.31)
 

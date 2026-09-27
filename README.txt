@@ -1,19 +1,23 @@
- === SMNTCS Custom Logo Link ===
+=== SMNTCS Custom Logo Link ===
 
-Contributors: 		nielslange, timbre-design
-Tags: 				Custom Logo Link, Logo Link
-Stable tag: 		2.4
-Tested up to: 		6.7
-Requires at least: 	3.4
-Requires PHP: 		5.8
-License: 			GPL v2 or later
-License URI: 		https://www.gnu.org/licenses/gpl-2.0.html
+Contributors:       nielslange, timbre-design
+Tags:               logo, logo link, custom logo, site title, header
+Requires at least:  5.7
+Tested up to:       7.1
+Requires PHP:       7.4
+Stable tag:         2.5
+License:            GPL v2 or later
+License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
-Allows to customize the logo link.
+Points the site logo and site title to any URL you choose instead of the home page, in classic and block themes.
 
 == Description ==
 
-Allows to add a custom link to the image and textual logo.
+By default, the logo and the site title of a WordPress site link to its home page. SMNTCS Custom Logo Link lets you point them anywhere else, for example to your main company website, a shop or a landing page.
+
+Enter the URL in the Customizer and choose whether it opens in a new tab. Full URLs such as https://example.com and relative links such as /en/ or a single dot both work.
+
+The plugin updates the link on the server for block themes and for themes that use the core logo, and in the browser for themes that build their own header.
 
 === Compatible with ===
 
@@ -26,6 +30,7 @@ Allows to add a custom link to the image and textual logo.
 * [GeneratePress](https://wordpress.org/themes/generatepress/)
 * [Hello Elementor](https://wordpress.org/themes/hello-elementor/)
 * [Hestia](https://wordpress.org/themes/hestia/)
+* [Kadence](https://wordpress.org/themes/kadence/)
 * [Neve](https://wordpress.org/themes/neve/)
 * [Nevertheless](https://wordpress.org/themes/nevertheless/)
 * [OceanWP](https://wordpress.org/themes/oceanwp/)
@@ -39,6 +44,7 @@ Allows to add a custom link to the image and textual logo.
 * [Twenty Sixteen](https://wordpress.org/themes/twentysixteen/)
 * [Twenty Twenty](https://wordpress.org/themes/twentytwenty/)
 * [XI Portfolio](https://wordpress.org/themes/xi-portfolio/)
+* [Yuki](https://wordpress.org/themes/yuki/)
 
 == Installation ==
 
@@ -48,9 +54,19 @@ Allows to add a custom link to the image and textual logo.
 
 == Contribute ==
 
-Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
+Contributions are more than welcome. Simply head over to [GitHub](https://github.com/nielslange/smntcs-custom-logo-link/pulls) and open a pull request.
 
 == Changelog ==
+
+= 2.5 (2026.09.26) =
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+- Add support for the Kadence and Yuki themes
+- Fix Hestia and other themes where only the first logo link was updated
+- Allow relative links such as a single dot or /en/
+- Update the logo link on the server for themes that use the core logo and for block themes, so it also works without JavaScript
+- Add the smntcs_custom_logo_link_selectors filter for theme developers
 
 = 2.4 (2024.12.31) =
 
