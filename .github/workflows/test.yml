@@ -1,4 +1,4 @@
-name: Run PHPCS, PHPLint, Psalm and Cypress
+name: Test
 
 on:
   pull_request:
@@ -77,25 +77,50 @@ jobs:
       - name: Run Psalm
         run: composer psalm
 
-  Cypress:
+  js-e2e-wp-env:
+    name: JS E2E (Playwright, wp-env)
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v7
 
-      - name: Install node
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Set up Node
         uses: actions/setup-node@v7
         with:
-          node-version: '24'
+          node-version: lts/*
+          cache: pnpm
 
       - name: Install dependencies
-        run: npm install -g pnpm && pnpm install
+        run: pnpm install --frozen-lockfile
 
-      - name: Start local server
+      - name: Cache Playwright browsers
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Start the local site
         run: pnpm wp-env start
 
-      - name: Wait for server to be ready
-        run: npx wait-on http://localhost:8889
+      - name: Run Playwright
+        run: pnpm test:e2e
 
-      - name: Run Cypress tests
-        run: pnpm exec cypress run --config-file=cypress.config.js --browser electron --headless
+      # Also for a passed run with flaky tests: a failed first attempt keeps its trace (retain-on-failure).
+      - name: Upload report
+        uses: actions/upload-artifact@v7
+        if: ${{ !cancelled() && hashFiles('test-results/**/trace.zip') != '' }}
+        continue-on-error: true
+        with:
+          name: playwright-report
+          path: |
+            playwright-report
+            test-results
+          if-no-files-found: ignore
+          retention-days: 3

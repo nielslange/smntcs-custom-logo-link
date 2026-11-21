@@ -8,3 +8,6 @@ cypress/videos
 playwright-report
 test-results
 .phplint-cache
+/artifacts/
+/test-results/
+/playwright-report/

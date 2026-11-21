@@ -41,3 +41,5 @@ README.md
 tsconfig.json
 /assets/icon*
 /assets/banner-*
+/artifacts
+playwright.config.mjs
