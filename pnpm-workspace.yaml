@@ -1,3 +1,2 @@
 allowBuilds:
-  'cypress': true
   'fs-ext-extra-prebuilt': true
